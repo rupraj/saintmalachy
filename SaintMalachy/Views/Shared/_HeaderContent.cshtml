@@ -1,0 +1,26 @@
+﻿<div class="row">
+    <a href="/new">
+        <div class="col-md-4">
+            <div class="h2">
+                St. Malachy Parish
+            </div>
+            <div class="h4">
+                99 Bedford Street<br />
+                Burlington MA 01803<br />
+                (781)-272-5111
+            </div>
+        </div>
+    </a>
+    <div id="TopHeaderLinks" class="col-md-8 text-right">
+        <ol class="breadcrumb">
+            <li class="customfontfamily">@Html.ActionLink("Mass Times", "MassTimes","TopHeader")</li>
+            <li class="customfontfamily">@Html.ActionLink("Bulletin", "Bulletin", "TopHeader")</li>
+            <li class="customfontfamily">@Html.ActionLink("Directions", "Direction", "TopHeader")</li>
+            <li class="customfontfamily">@Html.ActionLink("Contact Us", "Contact", "TopHeader")</li>
+        </ol>
+        <div class="headerlink pull-right"></div>
+    </div>
+</div>
+<div class="row">
+    @{ Html.RenderPartial("_NavBar");}
+</div>

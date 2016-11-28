@@ -1,0 +1,660 @@
+﻿/*Margins*/
+.margintopone{
+    margin-top:1% !important;
+}
+.margintopthree{
+    margin-top:3% !important;
+}
+.margintoptwo{
+    margin-top:2% !important;
+}
+.marginbottomtwo{
+    margin-bottom:2%;
+}
+hr{
+        border: 1px solid #e2e2e2!important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'cinzel',serif !important;
+    
+}
+.h2 {
+    font-family: 'cinzel',serif !important;
+    color: #000 !important;
+}
+
+.h4 {
+    font-family: 'cinzel',serif !important;
+    color: #000 !important;
+}
+
+.breadcrumb a {
+    padding: 8px !important;
+    font-size: 19px;
+    color: #000 !important;
+}
+.breadcrumb a:hover {
+    text-decoration: none !important;
+    background-color: #caf0ca/*#cacdca*/ /*#d9ead9*/;
+    border-radius: 4px;
+}
+
+.breadcrumbclick{
+    text-decoration: none !important;
+    background-color: #caf0ca/*#cacdca*/ /*#d9ead9*/;
+    border-radius: 4px;
+}
+
+.headerlink {
+    padding-bottom: 8px;
+    /*border-bottom: 1px solid #97c597/*#d9ead9*/
+    width:560px;
+}
+
+.imgContent {
+    width: 800px;
+    position: relative;
+    float: left;
+}
+
+.italicspope {
+    margin-right: 10%;
+    margin-top: -3%;
+    float: right;
+    position: relative;
+    font-size:16px;
+}
+
+.divider {
+    height: 450px;
+    position: relative;
+    float: left;
+    background-color: #919191;
+    width: 3px;
+}
+.dividerhorizontal {
+    height: 3px;
+    width:100%;
+    position: relative;
+    float: left;
+    background-color: #c6dcc6;
+    box-shadow:2px 2px 10px #c6dcc6;
+}
+
+.rightsideContent {
+    position: relative;
+    float: left;
+    width: 29%;
+    height: 100%;
+}
+.rightsideContent ul{
+    font-size:14px;
+}
+
+.paddingRemoveLeft{
+    padding-left:0px !important;
+}
+/*column styles*/
+.col-md-8 {
+    padding-right: 10px !important;
+}
+.paddingleftremove {
+    padding-left: 0px !important;
+}
+/*breadcrumb style*/
+.breadcrumb {
+    background-color: #fff !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+/*Panel style*/
+.panel {
+    margin-bottom: 0px !important;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.panel-heading {
+    background-color:#a2c7a2 !important/*#bababa !important*/; /*#a3a3a3 !important #808080 !important;*/
+    border-color: #a2c7a2 !important/*#bababa !important*/;/*#a3a3a3 !important;*/
+}
+
+.panel-title {
+    font-weight: bold;
+    padding-left: 50px;
+    color:#000 !important;
+}
+
+.panel-primary {
+    border-color: #a2c7a2 !important/*#bababa !important*/;/*#a3a3a3 !important;*/
+}
+
+.panel-body {
+    padding: 0px 15px 0px 15px !important;
+    height: 410px;
+    overflow-y: auto;
+}
+
+#funeralreading .panel-heading{
+    color: #333 !important;
+    background-color: #f0f0f0 !important;
+    border-color: #ddd !important;
+}
+#funeralreading .panel-title{
+    padding-left: 0px;
+    font-size:18px;
+    font-weight:normal;
+    font-family:Verdana,sans-serif !important;
+    color:#494949 !important;
+}
+
+#funeralreading a{
+    text-decoration:none;
+}
+
+#funeralreading .panel-body {
+    overflow-y: visible;
+    height:auto;
+}
+
+/*navbar style*/
+.navbar-default {
+    margin-left: 15px;
+    width: 98%;
+}
+
+/*carousel control style*/
+.carousel-control.right{
+    /*left:617px !important;*/
+}
+
+.carouselcontainer {
+    /*background-color:#efefef;*/
+    position: relative;
+    float: left;
+    width: 105%;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.carousel {
+    /*background-color:#efefef;*/
+    position: relative;
+    float: left;
+    border-radius: 2px;
+}
+
+/*list group*/
+.list-group-item{
+    border:none !important;
+    border-top:1px solid #a2c7a2 !important;
+    padding:10px 1px !important;
+    margin-top:-2px !important;
+    border-radius:0px !important;
+}
+
+/* Index page image buttons*/
+.imageButton{
+    margin-top:20px;
+    width:96.33%;
+    box-shadow: 7px 7px 5px #888888;
+}
+.paddingLeft {
+    padding-left: 30px !important;
+}
+.paddingRight {
+    padding-right: 30px !important;
+}
+
+
+/*Google map directions container*/
+.mapHeight{
+    height:600px;
+}
+#directionsPanelContainer{
+    /*background-color:#e2edda;*/
+}
+#directionFieldsContainer .form-control {
+display:inline;
+}
+
+#directionFieldsContainer .label-primary {
+background-color:transparent;
+margin-left:-15px;
+}
+#directionFieldsContainer{
+    position:relative;
+    float:left;
+    background-color:#e2edda;
+    padding:10px;
+    width:100%;
+    margin-left:-15px;
+}
+#directionFieldsContainer .btn-success{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+#mapContainer{
+    margin-top:5px;
+}
+
+/* Staff Picture */
+.pictureContainer{
+    float:left;
+    width:80%;
+    border:1px solid #d1d1d1;
+    margin-bottom:5px;
+}
+
+.staffImg{
+    float:left;
+    width:100%;
+    padding:8px;
+}
+.staffDetails{
+    width:85%;
+    margin-top:3px;
+    font-size:17px;
+}
+.staffCategoryContainer{
+    margin-top:15px;
+    position:relative;
+    float:left;
+}
+
+/*Bulletin*/
+.bulletinContainer{
+    position:relative;
+    float:left;
+    width:100%;
+}
+.bulletinItem{
+    position:relative;
+    float:left;
+    width:370px;
+    /*height:408px;*/
+    margin-bottom:15px;
+}
+.bulletinImageContainer{
+    background-color:lightgray;
+    padding:5px;
+    position:relative;
+    float:left;
+}
+.bulletinImageContainer img{
+    height:350px;
+}
+
+/* Embedd video*/
+.videoContainerWidth{
+    width:106%;
+    box-shadow: 0px 4px 9px #888888;
+}
+
+/*Baptism*/
+.baptismBodyMargin{
+    margin-top:8px !important;
+}
+.baptismUsefulLinks{
+    margin-top:8px;
+    width:108%;
+}
+.baptismUsefulLinks .list-group-item{
+    padding:8px !important;
+    border:1px solid #a2c7a2 !important;
+    margin-top:0px !important;
+    font-size:15px !important;
+}
+.baptismUsefulLinks .list-group-item:first-child{
+    padding:4px !important;
+    background-color:#a2c7a2;
+    font-weight:bold !important;
+}
+.baptismUsefulLinks .list-group-item:first-child h4{
+    font-weight:bold !important;
+}
+
+/*Funeral*/
+.funeralBodyMargin{
+    margin-top:8px !important;
+}
+.funeralUsefulLinks{
+    margin-top:8px;
+    width:108%;
+}
+.funeralUsefulLinks .list-group-item{
+    padding:8px !important;
+    border:1px solid #a2c7a2 !important;
+    margin-top:0px !important;
+    font-size:15px !important;
+}
+.funeralUsefulLinks .list-group-item:first-child{
+    padding:4px !important;
+    background-color:#a2c7a2;
+    font-weight:bold !important;
+}
+.funeralUsefulLinks .list-group-item:first-child h4{
+    font-weight:bold !important;
+}
+
+/*Religious Ed*/
+.religiousedBodyMargin{
+    margin-top:8px !important;
+}
+.religiousedUsefulLinks{
+    margin-top:8px;
+    width:108%;
+}
+.religiousedUsefulLinks .list-group-item{
+    padding:8px !important;
+    border:1px solid #a2c7a2 !important;
+    margin-top:0px !important;
+    font-size:15px !important;
+}
+.religiousedUsefulLinks .list-group-item:first-child{
+    padding:4px !important;
+    background-color:#a2c7a2;
+    font-weight:bold !important;
+}
+.religiousedUsefulLinks .list-group-item:first-child h4{
+    font-weight:bold !important;
+}
+
+/* Online Form*/
+.textAlignForm{
+    text-align:left !important;
+}
+.labelWidth{
+    width:18% !important;
+}
+.labelWidth20{
+    width:21% !important;
+}
+.labelWidth40{
+    width:50% !important;
+}
+.controlWidth{
+    width:30% !important;
+}
+.onlineFormTopMargin{
+    margin-top:10% !important;
+}
+.error{
+    color:red;
+}
+
+/*Modals*/
+
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
+          transition:         transform .3s ease-out;
+  -webkit-transform: translate(0, -25%);
+      -ms-transform: translate(0, -25%);
+       -o-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+       -o-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-content {
+  position: relative !important;
+  background-color: #fff !important;
+  -webkit-background-clip: padding-box !important;
+          background-clip: padding-box !important;
+  border: 1px solid #999 !important;
+  border: 1px solid rgba(0, 0, 0, .2) !important;
+  border-radius: 6px !important;
+  outline: 0 !important;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5) !important;
+          height:100px;
+          padding-top:30px;
+          text-align:center;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  content: " ";
+}
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
+}
+/*Prayer Of Mercy*/
+.mercyimage{
+    margin-top: 5%;
+    float: left;
+    position: relative;
+    padding-right: 15px;
+}
+/*RCIA*/
+.rciaimage{
+    margin-top: 1%;
+    float: left;
+    position: relative;
+    padding-right: 15px;
+}
+
+/*SHow Hide*/
+.hidden{
+    display:none;
+}
+
+/*Religious Education*/
+.reledtitle{
+    color:#008000;
+}
+.grade16{
+    background-color:#dce6f2;
+    border:2px solid #1f497d;
+    color:#3b618e;
+    text-align:center;
+    margin-bottom:5%;
+}
+
+.grade78{
+    background-color:#e6b9b8;
+    border:2px solid #c0504d;
+    color:#602826;
+    text-align:center;
+    margin-bottom:5%;
+}
+
+.grade910{
+    background-color:#e6cce6;
+    border:2px solid #600060;
+    color:#600060;
+    text-align:center;
+    margin-bottom:5%;
+}
+.reledcontact{
+    background-color:#d9ffd9;
+    border:2px solid #008000;
+    color:#008000;
+    text-align:center;
+    margin-bottom:5%;
+}
+
+.summercamp{
+    background-color:#ffcc99;
+    border:2px solid #cc3321;
+    color:#cc3321;
+    text-align:center;
+    margin-bottom:5%;
+}
+.programcost{
+    border:2px solid #339933;
+    color:#339933;
+    text-align:center;
+    margin-bottom:5%;
+}
+
+/*Font Awesome*/
+#funeralreading .fa{
+    font-size:18px;
+    color:#79b479;
+    padding-right:10px;
+ }
+
+/*History*/
+#History .col-md-3{
+    width:16% !important;
+    padding:0px;
+    margin:0px;
+}
+
+#History .pictureContainer{
+    float: left;
+    width: 90%;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 5px;
+    text-align:center;
+    padding:2px;
+}
+
+#History .photocenter{
+    padding-left:6%;
+}
+
+#HistoryDetails .historyimage{
+    margin-top: 1%;
+    float: left;
+    position: relative;
+    padding-right: 15px;
+}
+
+/*Who is Malachy*/
+#malachydetails{
+margin-left: -4%;
+}
+#whoiscontainer{
+    width: 103%;
+}
+
+#whoiscontainer img{
+    /*padding:5px;*/
+    width:109%;
+    margin-left:1%;
+}
+
+#whoismaincontainer hr{
+    width:103%;
+    float:left;
+    position:relative;
+    
+}
+hr{
+    margin-top: 0% !important;
+        
+}
+
+/*Baptism Dates Modal*/
+#baptismdateModal  .modal-body-content{
+    position:relative !important;
+    float:left !important;
+}
+#baptismdateModal .modal-content{
+    height:auto !important;
+}

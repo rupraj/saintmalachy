@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Religious Education";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container row">
+    @*<div class="col-md-9 paddingleftremove baptismBodyMargin">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" title="How do I go to Confession?" src="//www.youtube.com/embed/3Vnl9Dkfg-M?wmode=opaque&amp;rel=0&amp;color=white" frameborder="0" allowfullscreen="" id="smBaptism"></iframe>
+        </div>
+    </div>*@
+    <div class="col-md-9 text-left paddingleftremove">
+        @RenderBody()
+    </div>
+    <div class="col-md-3">
+        @{Html.RenderPartial("_ReligiousEdLeftMenu");}
+    </div>
+    
+</div>
+@Scripts.Render("~/bundles/religioused")
+

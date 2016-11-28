@@ -1,0 +1,104 @@
+﻿@model IEnumerable<SaintMalachy.Models.BaptismRequestModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <th>
+                Baptism Date
+            </th>
+            <th>
+                Dinner Date
+            </th>
+            <th>
+                Child Last Name
+            </th>
+            <th>
+                Child Name
+            </th>
+            <th>
+                Child Date Of Birth
+            </th>
+            <th>
+                Father Full Name
+            </th>
+            <th>
+                Mother First Name
+            </th>
+            <th>
+                Mother Maiden Name
+            </th>
+            <th>
+               Address
+            </th>
+            <th>
+                City, State
+            </th>
+            <th>
+                Phone
+            </th>
+            <th>
+                Email
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BaptismDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DinnerDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChildLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChildName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChildDateOfBirth)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.FatherFullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotherFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MotherMaidenName)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CityState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id=item.BaptismRequestModelId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

@@ -1,0 +1,684 @@
+﻿
+
+@{
+    ViewBag.Title = "Religious Education Online Form";
+    Layout = "~/Views/Shared/ReligiousEd_Layout.cshtml";
+}
+<div class="container row">
+    <div class="col-md-9 paddingleftremove">
+        <h2>Religious Education Registration 2016-2017</h2>
+        <hr />
+        <p class="col-md-12 row text-danger">
+            *** Please complete the registration by the corresponding deadline.  We cannot guarantee entry into the program if registration is completed after the deadline.
+            
+        </p>
+        <p class="col-md-12 row text-danger">
+            Registration deadlines:<br />
+            Summer Sessions 1: June 17th<br />
+            Summer 2: June 24th<br />
+            Sunday, 7/8, Confirmation: September 15
+        </p>
+        <div class="onlineFormTopMargin">
+            <form class="form-horizontal paddingleftremove" id="ReligiousEd" method="get">
+                <div id="familyInfoContainer">
+                    <div class="form-group">
+                        <label for="TodayDate" class="col-md-3 control-label textAlignForm labelWidth">Today's Date:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="TodayDate" id="TodayDate" placeholder="Today's Date" type="text" />
+                        </div>
+                        <label for="FamilyName" class="col-md-3 control-label textAlignForm labelWidth">Family Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="FamilyName" id="FamilyName" placeholder="Family Name" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Address" class="col-md-3 control-label textAlignForm labelWidth">Address:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Address" id="Address" placeholder="Address" type="text" />
+                        </div>
+                        <label for="City" class="col-md-3 control-label textAlignForm labelWidth">City:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="City" id="City" placeholder="City" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="State" class="col-md-3 control-label textAlignForm labelWidth">State:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="State" id="State" placeholder="State" type="text" />
+                        </div>
+                        <label for="Zip Code" class="col-md-3 control-label textAlignForm labelWidth">Zip Code:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="ZipCode" id="ZipCode" placeholder="Zip Code" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone" class="col-md-3 control-label textAlignForm labelWidth">Phone:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Phone" id="Phone" placeholder="Phone" type="text" />
+                        </div>
+                        <label for="FamilyEmail" class="col-md-3 control-label textAlignForm labelWidth">Family Email (the one you check):</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="FamilyEmail" id="FamilyEmail" placeholder="Family Email (the one you check)" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="FatherFirstName" class="col-md-3 control-label textAlignForm labelWidth">Father's First Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="FatherFirstName" id="FatherFirstName" placeholder="Father's First Name" type="text" />
+                        </div>
+                        <label for="FatherLastName" class="col-md-3 control-label textAlignForm labelWidth">Father's Last Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="FatherLastName" id="FatherLastName" placeholder="Father's Last Name" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="FatherEmail" class="col-md-3 control-label textAlignForm labelWidth">Father's Email Address:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="FatherEmail" id="FatherEmail" placeholder="Father's Email Address" type="text" />
+                        </div>
+                        <label for="MotherFirstName" class="col-md-3 control-label textAlignForm labelWidth">Mother's First Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="MotherFirstName" id="MotherFirstName" placeholder="Mother's First Name" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="MotherLastName" class="col-md-3 control-label textAlignForm labelWidth">Mother's Last Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="MotherLastName" id="MotherLastName" placeholder="Mother's Last Name" type="text" />
+                        </div>
+                        <label for="MotherMaiden" class="col-md-3 control-label textAlignForm labelWidth">Mother's Maiden Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="MotherMaiden" id="MotherMaiden" placeholder="Mother's Maiden Name" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="MotherEmail" class="col-md-3 control-label textAlignForm labelWidth">Mother's Email Address:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="MotherEmail" id="MotherEmail" placeholder="Mother's Email Address" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h3>I want to help!!</h3>
+                        <hr />
+                        <div class="row col-md-12">
+                            <p>
+                                <input type="checkbox" name="checkhelp" value="teaching" data-text="I am interested in teaching" />&nbsp;I am interested in teaching
+                            </p>
+
+                        </div>
+                        <div class="row col-md-12">
+                            <p>
+                                <input type="checkbox" name="checkhelp" value="helping" data-text="I am interested in helping (but not teaching)" />&nbsp;I am interested in helping (but not teaching)
+                            </p>
+
+                        </div>
+                        <div class="row col-md-12">
+                            <p>
+                                <input type="checkbox" name="checkhelp" value="kidhelping" data-text="My middle schooler, highschooler, or college kid would like to help!!" />&nbsp;My middle schooler, highschooler, or college kid would like to help!!
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h3>If interested in helping submit Name and grade you are interested in helping with</h3>
+                        <hr />
+                        <p>
+                            Ex: Mrs. Jane Smith- Interested in helping with 1-6 Sunday Program, Mr. John Smith- Interested in helping with 2nd Grade, John Smith Jr (10th grader) interested in helping with Summer session 1,
+                        </p>
+                        <div class="row col-md-6 margintoptwo">
+                            <textarea class="form-control" rows="5" name="HelpInterest" id="HelpInterest" placeholder="Interested in helping"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="familyNext" type="button" class="btn btn-success">Next</button>
+                    </div>
+                </div>
+                <div id="ChildInfoContainer" style="display:none;">
+                    <div class="form-group col-md-12">
+                        <h3>Children's Information</h3>
+                        <hr />
+                        <div>
+                            Please fill out all information for all children.  When completed, scroll down to the final section.
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <h3>Child 1</h3>
+                        <hr />
+                    </div>
+                    <div class="form-group">
+                        <label for="Child1FirstName" class="col-md-3 control-label textAlignForm labelWidth">Child #1's First Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1FirstName" id="Child1FirstName" placeholder="First Name" type="text" />
+                        </div>
+                        <label for="Child1MiddleInitial" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Middle Initial:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1MiddleInitial" id="Child1MiddleInitial" placeholder="Middle Initial" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child1LastName" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Last Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1LastName" id="Child1LastName" placeholder="Last Name" type="text" />
+                        </div>
+                        <label for="Child1Grade" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Grade in September 2016:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1Grade" id="Child1Grade" placeholder="Grade" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child1DOB" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Date of Birth:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1DOB" id="Child1DOB" placeholder="Date of birth" type="text" />
+                        </div>
+                        <label for="Child1Email" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Email (If relevant):</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1Email" id="Child1Email" placeholder="Email" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child1BaptismPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Place of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1BaptismPlace" id="Child1BaptismPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child1BaptismDate" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Date of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1BaptismDate" id="Child1BaptismDate" placeholder="Date of Baptism" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child1EucharistPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Place of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1EucharistPlace" id="Child1EucharistPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child1EucharistDate" class="col-md-3 control-label textAlignForm labelWidth">Child #1's Date of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child1EucharistDate" id="Child1EucharistDate" placeholder="Date of First Eucharist" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="SacramentRecords" class="col-md-12 control-label textAlignForm">Child #1's Sacramental Records:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            St. Malachy's must have paper record of all sacraments that your children have completed. Please call the parish where they were baptized and have them send a copy of the baptism and first communion record to St. Malachy's Religious Ed c/o Camille Mainardi, 99 Bedford St. Burlington, MA. If you have previously submitted a record, please select accordingly. Please note that no child in a Sacramental prep year (Grade 2 or 10) can receive the Sacrament until records are submitted.
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="sacrecords1" value="WillSend"  />&nbsp;Will send Child's Records</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords1" value="PreviouslySend"  />&nbsp;Child's records have been sent previously.</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords1" value="StMalachySacrament"  />&nbsp;Child received all sacraments at St. Malachy's</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="RelEdChoice" class="col-md-12 control-label textAlignForm">Child #1's Religious Ed Class Choice:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            Please choose one of the following. Summer Sessions are strictly first come first serve. Please know that if you select the summer program, you are acknowledging that the child is required to attend all four days of the session from start to finish, and three religious ed sessions throughout the school year (which will be scheduled when academic calendars are released for the fall, expect one around Halloween, Early Christmas, and Easter).
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="reledchoice1" value="SummerSession1"  />&nbsp;Summer Session 1 (GRADE 3-6 ONLY): Tuesday, June 21- Friday June 24 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice1" value="SummerSession2" />&nbsp;Summer Session 2 (GRADE 3-6 ONLY): Monday, June 27- Thursday, June 30 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice1" value="SundayProgram"  />&nbsp;Sunday Program (GRADES 1-6): Sunday mornings 9:00am-10:15am (approx. 2 classes/month, schedule tba.)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice1" value="MondayNight"  />&nbsp;7/8th Grade: Monday nights 6:30-7:30 (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice1" value="Confirmation1"/>&nbsp;Confirmation 1 (GRADE 9) (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice1" value="Confirmation2"  />&nbsp;Confirmation 2 (GRADE 10) (schedule tba)</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h3>Child 2</h3>
+                        <hr />
+                    </div>
+                    <div class="form-group">
+                        <label for="Child2FirstName" class="col-md-3 control-label textAlignForm labelWidth">Child #2's First Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2FirstName" id="Child2FirstName" placeholder="First Name" type="text" />
+                        </div>
+                        <label for="Child2MiddleInitial" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Middle Initial:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2MiddleInitial" id="Child2MiddleInitial" placeholder="Middle Initial" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child2LastName" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Last Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2LastName" id="Child2LastName" placeholder="Last Name" type="text" />
+                        </div>
+                        <label for="Child2Grade" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Grade in September 2016:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2Grade" id="Child2Grade" placeholder="Grade" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child2DOB" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Date of Birth:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2DOB" id="Child2DOB" placeholder="Date of birth" type="text" />
+                        </div>
+                        <label for="Child2Email" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Email (If relevant):</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2Email" id="Child2Email" placeholder="Email" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child2BaptismPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Place of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2BaptismPlace" id="Child2BaptismPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child2BaptismDate" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Date of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2BaptismDate" id="Child2BaptismDate" placeholder="Date of Baptism" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child2EucharistPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Place of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2EucharistPlace" id="Child2EucharistPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child2EucharistDate" class="col-md-3 control-label textAlignForm labelWidth">Child #2's Date of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child2EucharistDate" id="Child2EucharistDate" placeholder="Date of First Eucharist" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="SacramentRecords" class="col-md-12 control-label textAlignForm">Child #2's Sacramental Records:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            St. Malachy's must have paper record of all sacraments that your children have completed. Please call the parish where they were baptized and have them send a copy of the baptism and first communion record to St. Malachy's Religious Ed c/o Camille Mainardi, 99 Bedford St. Burlington, MA. If you have previously submitted a record, please select accordingly. Please note that no child in a Sacramental prep year (Grade 2 or 10) can receive the Sacrament until records are submitted.
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="sacrecords2" value="WillSend"  />&nbsp;Will send Child's Records</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords2" value="PreviouslySend"  />&nbsp;Child's records have been sent previously.</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords2" value="StMalachySacrament"  />&nbsp;Child received all sacraments at St. Malachy's</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="RelEdChoice" class="col-md-12 control-label textAlignForm">Child #2's Religious Ed Class Choice:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            Please choose one of the following. Summer Sessions are strictly first come first serve. Please know that if you select the summer program, you are acknowledging that the child is required to attend all four days of the session from start to finish, and three religious ed sessions throughout the school year (which will be scheduled when academic calendars are released for the fall, expect one around Halloween, Early Christmas, and Easter).
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="reledchoice2" value="SummerSession1"  />&nbsp;Summer Session 1 (GRADE 3-6 ONLY): Tuesday, June 21- Friday June 24 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice2" value="SummerSession2"  />&nbsp;Summer Session 2 (GRADE 3-6 ONLY): Monday, June 27- Thursday, June 30 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice2" value="SundayProgram"  />&nbsp;Sunday Program (GRADES 1-6): Sunday mornings 9:00am-10:15am (approx. 2 classes/month, schedule tba.)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice2" value="MondayNight"  />&nbsp;7/8th Grade: Monday nights 6:30-7:30 (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice2" value="Confirmation1"  />&nbsp;Confirmation 1 (GRADE 9) (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice2" value="Confirmation2" />&nbsp;Confirmation 2 (GRADE 10) (schedule tba)</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h3>Child 3</h3>
+                        <hr />
+                    </div>
+                    <div class="form-group">
+                        <label for="Child3FirstName" class="col-md-3 control-label textAlignForm labelWidth">Child #3's First Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3FirstName" id="Child3FirstName" placeholder="First Name" type="text" />
+                        </div>
+                        <label for="Child3MiddleInitial" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Middle Initial:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3MiddleInitial" id="Child3MiddleInitial" placeholder="Middle Initial" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child3LastName" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Last Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3LastName" id="Child3LastName" placeholder="Last Name" type="text" />
+                        </div>
+                        <label for="Child3Grade" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Grade in September 2016:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3Grade" id="Child3Grade" placeholder="Grade" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child3DOB" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Date of Birth:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3DOB" id="Child3DOB" placeholder="Date of birth" type="text" />
+                        </div>
+                        <label for="Child3Email" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Email (If relevant):</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3Email" id="Child3Email" placeholder="Email" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child3BaptismPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Place of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3BaptismPlace" id="Child3BaptismPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child3BaptismDate" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Date of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3BaptismDate" id="Child3BaptismDate" placeholder="Date of Baptism" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child3EucharistPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Place of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3EucharistPlace" id="Child3EucharistPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child3EucharistDate" class="col-md-3 control-label textAlignForm labelWidth">Child #3's Date of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child3EucharistDate" id="Child3EucharistDate" placeholder="Date of First Eucharist" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="SacramentRecords" class="col-md-12 control-label textAlignForm">Child #3's Sacramental Records:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            St. Malachy's must have paper record of all sacraments that your children have completed. Please call the parish where they were baptized and have them send a copy of the baptism and first communion record to St. Malachy's Religious Ed c/o Camille Mainardi, 99 Bedford St. Burlington, MA. If you have previously submitted a record, please select accordingly. Please note that no child in a Sacramental prep year (Grade 2 or 10) can receive the Sacrament until records are submitted.
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="sacrecords3" value="WillSend"  />&nbsp;Will send Child's Records</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords3" value="PreviouslySend"  />&nbsp;Child's records have been sent previously.</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords3" value="StMalachySacrament"  />&nbsp;Child received all sacraments at St. Malachy's</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="RelEdChoice" class="col-md-12 control-label textAlignForm">Child #3's Religious Ed Class Choice:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            Please choose one of the following. Summer Sessions are strictly first come first serve. Please know that if you select the summer program, you are acknowledging that the child is required to attend all four days of the session from start to finish, and three religious ed sessions throughout the school year (which will be scheduled when academic calendars are released for the fall, expect one around Halloween, Early Christmas, and Easter).
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="reledchoice3" value="SummerSession1"  />&nbsp;Summer Session 1 (GRADE 3-6 ONLY): Tuesday, June 21- Friday June 24 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice3" value="SummerSession2" />&nbsp;Summer Session 2 (GRADE 3-6 ONLY): Monday, June 27- Thursday, June 30 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice3" value="SundayProgram"  />&nbsp;Sunday Program (GRADES 1-6): Sunday mornings 9:00am-10:15am (approx. 2 classes/month, schedule tba.)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice3" value="MondayNight"  />&nbsp;7/8th Grade: Monday nights 6:30-7:30 (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice3" value="Confirmation1"  />&nbsp;Confirmation 1 (GRADE 9) (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice3" value="Confirmation2"  />&nbsp;Confirmation 2 (GRADE 10) (schedule tba)</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h3>Child 4</h3>
+                        <hr />
+                    </div>
+                    <div class="form-group">
+                        <label for="Child4FirstName" class="col-md-3 control-label textAlignForm labelWidth">Child #4's First Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4FirstName" id="Child4FirstName" placeholder="First Name" type="text" />
+                        </div>
+                        <label for="Child4MiddleInitial" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Middle Initial:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4MiddleInitial" id="Child4MiddleInitial" placeholder="Middle Initial" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child4LastName" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Last Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4LastName" id="Child4LastName" placeholder="Last Name" type="text" />
+                        </div>
+                        <label for="Child4Grade" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Grade in September 2016:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4Grade" id="Child4Grade" placeholder="Grade" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child4DOB" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Date of Birth:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4DOB" id="Child4DOB" placeholder="Date of birth" type="text" />
+                        </div>
+                        <label for="Child4Email" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Email (If relevant):</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4Email" id="Child4Email" placeholder="Email" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child4BaptismPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Place of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4BaptismPlace" id="Child4BaptismPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child4BaptismDate" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Date of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4BaptismDate" id="Child4BaptismDate" placeholder="Date of Baptism" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child4EucharistPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Place of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4EucharistPlace" id="Child4EucharistPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child4EucharistDate" class="col-md-3 control-label textAlignForm labelWidth">Child #4's Date of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child4EucharistDate" id="Child4EucharistDate" placeholder="Date of First Eucharist" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="SacramentRecords" class="col-md-12 control-label textAlignForm">Child #4's Sacramental Records:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            St. Malachy's must have paper record of all sacraments that your children have completed. Please call the parish where they were baptized and have them send a copy of the baptism and first communion record to St. Malachy's Religious Ed c/o Camille Mainardi, 99 Bedford St. Burlington, MA. If you have previously submitted a record, please select accordingly. Please note that no child in a Sacramental prep year (Grade 2 or 10) can receive the Sacrament until records are submitted.
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="sacrecords4" value="WillSend"  />&nbsp;Will send Child's Records</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords4" value="PreviouslySend"  />&nbsp;Child's records have been sent previously.</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords4" value="StMalachySacrament"  />&nbsp;Child received all sacraments at St. Malachy's</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="RelEdChoice" class="col-md-12 control-label textAlignForm">Child #4's Religious Ed Class Choice:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            Please choose one of the following. Summer Sessions are strictly first come first serve. Please know that if you select the summer program, you are acknowledging that the child is required to attend all four days of the session from start to finish, and three religious ed sessions throughout the school year (which will be scheduled when academic calendars are released for the fall, expect one around Halloween, Early Christmas, and Easter).
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="reledchoice4" value="SummerSession1"  />&nbsp;Summer Session 1 (GRADE 3-6 ONLY): Tuesday, June 21- Friday June 24 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice4" value="SummerSession2"  />&nbsp;Summer Session 2 (GRADE 3-6 ONLY): Monday, June 27- Thursday, June 30 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice4" value="SundayProgram"  />&nbsp;Sunday Program (GRADES 1-6): Sunday mornings 9:00am-10:15am (approx. 2 classes/month, schedule tba.)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice4" value="MondayNight"  />&nbsp;7/8th Grade: Monday nights 6:30-7:30 (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice4" value="Confirmation1"  />&nbsp;Confirmation 1 (GRADE 9) (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice4" value="Confirmation2"  />&nbsp;Confirmation 2 (GRADE 10) (schedule tba)</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h3>Child 5</h3>
+                        <hr />
+                    </div>
+                    <div class="form-group">
+                        <label for="Child5FirstName" class="col-md-3 control-label textAlignForm labelWidth">Child #5's First Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5FirstName" id="Child5FirstName" placeholder="First Name" type="text" />
+                        </div>
+                        <label for="Child5MiddleInitial" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Middle Initial:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5MiddleInitial" id="Child5MiddleInitial" placeholder="Middle Initial" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child5LastName" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Last Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5LastName" id="Child5LastName" placeholder="Last Name" type="text" />
+                        </div>
+                        <label for="Child5Grade" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Grade in September 2016:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5Grade" id="Child5Grade" placeholder="Grade" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child5DOB" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Date of Birth:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5DOB" id="Child5DOB" placeholder="Date of birth" type="text" />
+                        </div>
+                        <label for="Child5Email" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Email (If relevant):</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5Email" id="Child5Email" placeholder="Email" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child5BaptismPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Place of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5BaptismPlace" id="Child5BaptismPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child5BaptismDate" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Date of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5BaptismDate" id="Child5BaptismDate" placeholder="Date of Baptism" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child5EucharistPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Place of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5EucharistPlace" id="Child5EucharistPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child5EucharistDate" class="col-md-3 control-label textAlignForm labelWidth">Child #5's Date of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child5EucharistDate" id="Child5EucharistDate" placeholder="Date of First Eucharist" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="SacramentRecords" class="col-md-12 control-label textAlignForm">Child #5's Sacramental Records:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            St. Malachy's must have paper record of all sacraments that your children have completed. Please call the parish where they were baptized and have them send a copy of the baptism and first communion record to St. Malachy's Religious Ed c/o Camille Mainardi, 99 Bedford St. Burlington, MA. If you have previously submitted a record, please select accordingly. Please note that no child in a Sacramental prep year (Grade 2 or 10) can receive the Sacrament until records are submitted.
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="sacrecords5" value="WillSend"  />&nbsp;Will send Child's Records</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords5" value="PreviouslySend"  />&nbsp;Child's records have been sent previously.</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords5" value="StMalachySacrament"  />&nbsp;Child received all sacraments at St. Malachy's</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="RelEdChoice" class="col-md-12 control-label textAlignForm">Child #5's Religious Ed Class Choice:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            Please choose one of the following. Summer Sessions are strictly first come first serve. Please know that if you select the summer program, you are acknowledging that the child is required to attend all four days of the session from start to finish, and three religious ed sessions throughout the school year (which will be scheduled when academic calendars are released for the fall, expect one around Halloween, Early Christmas, and Easter).
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="reledchoice5" value="SummerSession1"  />&nbsp;Summer Session 1 (GRADE 3-6 ONLY): Tuesday, June 21- Friday June 24 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice5" value="SummerSession2"  />&nbsp;Summer Session 2 (GRADE 3-6 ONLY): Monday, June 27- Thursday, June 30 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice5" value="SundayProgram"  />&nbsp;Sunday Program (GRADES 1-6): Sunday mornings 9:00am-10:15am (approx. 2 classes/month, schedule tba.)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice5" value="MondayNight"  />&nbsp;7/8th Grade: Monday nights 6:30-7:30 (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice5" value="Confirmation1"  />&nbsp;Confirmation 1 (GRADE 9) (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice5" value="Confirmation2"  />&nbsp;Confirmation 2 (GRADE 10) (schedule tba)</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h3>Child 6</h3>
+                        <hr />
+                    </div>
+                    <div class="form-group">
+                        <label for="Child6FirstName" class="col-md-3 control-label textAlignForm labelWidth">Child #6's First Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6FirstName" id="Child6FirstName" placeholder="First Name" type="text" />
+                        </div>
+                        <label for="Child6MiddleInitial" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Middle Initial:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6MiddleInitial" id="Child6MiddleInitial" placeholder="Middle Initial" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child6LastName" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Last Name:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6LastName" id="Child6LastName" placeholder="Last Name" type="text" />
+                        </div>
+                        <label for="Child6Grade" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Grade in September 2016:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6Grade" id="Child6Grade" placeholder="Grade" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child6DOB" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Date of Birth:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6DOB" id="Child6DOB" placeholder="Date of birth" type="text" />
+                        </div>
+                        <label for="Child6Email" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Email (If relevant):</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6Email" id="Child6Email" placeholder="Email" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child6BaptismPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Place of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6BaptismPlace" id="Child6BaptismPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="ChildBaptismDate" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Date of Baptism:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="ChildBaptismDate" id="ChildBaptismDate" placeholder="Date of Baptism" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Child6EucharistPlace" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Place of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6EucharistPlace" id="Child6EucharistPlace" placeholder="Name, City, State of Church" type="text" />
+                        </div>
+                        <label for="Child6EucharistDate" class="col-md-3 control-label textAlignForm labelWidth">Child #6's Date of First Eucharist:</label>
+                        <div class="col-md-6 controlWidth">
+                            <input class="form-control" name="Child6EucharistDate" id="Child6EucharistDate" placeholder="Date of First Eucharist" type="text" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="SacramentRecords" class="col-md-12 control-label textAlignForm">Child #6's Sacramental Records:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            St. Malachy's must have paper record of all sacraments that your children have completed. Please call the parish where they were baptized and have them send a copy of the baptism and first communion record to St. Malachy's Religious Ed c/o Camille Mainardi, 99 Bedford St. Burlington, MA. If you have previously submitted a record, please select accordingly. Please note that no child in a Sacramental prep year (Grade 2 or 10) can receive the Sacrament until records are submitted.
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="sacrecords6" value="WillSend"  />&nbsp;Will send Child's Records</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords6" value="PreviouslySend"  />&nbsp;Child's records have been sent previously.</label>
+                            <label class="col-md-12"><input type="radio" name="sacrecords6" value="StMalachySacrament"  />&nbsp;Child received all sacraments at St. Malachy's</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="RelEdChoice" class="col-md-12 control-label textAlignForm">Child #6's Religious Ed Class Choice:</label>
+                        <label class="text-justify col-md-12 labelnobold">
+                            Please choose one of the following. Summer Sessions are strictly first come first serve. Please know that if you select the summer program, you are acknowledging that the child is required to attend all four days of the session from start to finish, and three religious ed sessions throughout the school year (which will be scheduled when academic calendars are released for the fall, expect one around Halloween, Early Christmas, and Easter).
+                        </label>
+                        <div class="col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="reledchoice6" value="SummerSession1"  />&nbsp;Summer Session 1 (GRADE 3-6 ONLY): Tuesday, June 21- Friday June 24 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice6" value="SummerSession2"  />&nbsp;Summer Session 2 (GRADE 3-6 ONLY): Monday, June 27- Thursday, June 30 from 9:00am-2:00pm (+3classes)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice6" value="SundayProgram"  />&nbsp;Sunday Program (GRADES 1-6): Sunday mornings 9:00am-10:15am (approx. 2 classes/month, schedule tba.)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice6" value="MondayNight"  />&nbsp;7/8th Grade: Monday nights 6:30-7:30 (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice6" value="Confirmation1"  />&nbsp;Confirmation 1 (GRADE 9) (schedule tba)</label>
+                            <label class="col-md-12"><input type="radio" name="reledchoice6" value="Confirmation2"  />&nbsp;Confirmation 2 (GRADE 10) (schedule tba)</label>
+                        </div>
+                        <div>
+                            <button id="childBack" type="button" class="btn btn-success">Back</button>&nbsp;
+                            <button id="childNext" type="button" class="btn btn-success">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="PaymentsContainer" style="display:none;">
+                    <div class="form-group col-md-12">
+                        <h3>Payment</h3>
+                        <hr />
+                        <p>
+                            The cost of the programs are as follows:
+                        </p>
+                        <p>
+                            Summer Program: $125 per child, $300 maximum per family
+                            Sunday, 7/8th, </p><p>Confirmation Programs:  $100 per child, $275 maximum per family (lower maximum applies if no children in the summer program )</p>
+                        <p>
+                            Amount Due:
+                        </p>
+                        <div class="row col-md-12 radio">
+                            <label class="col-md-12"><input type="radio" name="amtdue" value="100" data-text="$100 (1 child in Sunday, 7/8th, or Confirmation Program)" />&nbsp;$100 (1 child in Sunday, 7/8th, or Confirmation Program)</label>
+                            <label class="col-md-12"><input type="radio" name="amtdue" value="125" data-text="$125 (1 child in summer program)" />&nbsp;$125 (1 child in summer program)</label>
+                            <label class="col-md-12"><input type="radio" name="amtdue" value="200" data-text="$200 (2 children in Sunday, 7/8th, or Confirmation Program)"/>&nbsp;$200 (2 children in Sunday, 7/8th, or Confirmation Program)</label>
+                            <label class="col-md-12"><input type="radio" name="amtdue" value="225" data-text="$225 (1 child in summer, 1 child in Sunday, etc.)"/>&nbsp;$225 (1 child in summer, 1 child in Sunday, etc.)</label>
+                            <label class="col-md-12"><input type="radio" name="amtdue" value="250" data-text="$250 (2 children in summer program)"/>&nbsp;$250 (2 children in summer program)</label>
+                            <label class="col-md-12"><input type="radio" name="amtdue" value="275" data-text="$275 (3 or more children in Sunday, 7/8th, or Confirmation Programs)"/>&nbsp;$275 (3 or more children in Sunday, 7/8th, or Confirmation Programs)</label>
+                            <label class="col-md-12"><input type="radio" name="amtdue" value="300" data-text="$300 (3 or more children in Summer AND/OR Sunday, 7/8th, or Confirmation Programs"/>&nbsp;$300 (3 or more children in Summer AND/OR Sunday, 7/8th, or Confirmation Programs</label>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <h3>CHECKS MADE PAYABLE TO:</h3>
+                        <hr />
+                        <p>St. Malachy Church.</p>
+                        <p>
+                            <b>Please send check to:</b>
+                        </p>
+                        <p>St. Malachy Church</p>
+                        <p>c/o Camille Mainardi</p>
+                        <p>99 Bedford St</p>
+                        <p>Burlington, MA 01803</p>
+                        
+                        <p>
+                            Deadline for payments correspond to the registration deadline.  All payments must be received by:</p>
+                        <p>Summer 1: June 17th</p>
+                        <p>Summer 2: June 24th</p>
+                            <p>Sunday, 7/8th, Confirmation: September 15th.
+                        </p>
+                        <p>
+                            Late payments will be subject to a $50 late fee.
+                        </p>
+                    </div>
+                    <div>
+                        <button id="PaymentBack" type="button" class="btn btn-success">Back</button>&nbsp;
+                        <button id="Submit" type="Submit" class="btn btn-success">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@Scripts.Render("~/bundles/religioused")
+
+
+
+
+

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Saint Malachy</title>
+    @Styles.Render("~/Content/cssgreen")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container body-content">
+        <div>
+            @{ Html.RenderPartial("_HeaderContent");}
+
+        </div>
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+    <div id="emailModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+
+    <div id="loader" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <i class="fa fa-refresh fa-spin"></i>&nbsp; Processing....
+            </div>
+        </div>
+    </div>
+    
+    @Scripts.Render("~/bundles/navbar")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/breadcrumb")
+    @Scripts.Render("~/bundles/global")
+    <script type="text/javascript">
+        UrlConstants.URL = "@System.Configuration.ConfigurationManager.AppSettings.Get("HostUrl")";
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

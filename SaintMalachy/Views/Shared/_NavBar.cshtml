@@ -1,0 +1,92 @@
+﻿<nav>
+    <ul class="content clearfix">
+        <li class="dropdown">
+            <a href="/new">ABOUT US</a>
+            <ul class="sub-menu">
+                <li>
+                    @Html.ActionLink("Staff", "Contact", "TopHeader")
+                </li>
+                <li>
+                    @Html.ActionLink("Parish Council", "ComingSoon", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Parish Finance Council", "ComingSoon", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("History Of Parish", "History", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("Who is St. Malachy?", "Malachy", "Home")
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">SACRAMENTS</a>
+            <ul class="sub-menu">
+                <li>@Html.ActionLink("Baptism", "Index", "Baptism")</li>
+                <li>@Html.ActionLink("Eucharist", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Reconciliation", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Confirmation", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Marriage", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Holy Orders", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Anointing of the sick", "ComingSoon", "Home")</li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">WORSHIP</a>
+            <ul class="sub-menu">
+                <li>@Html.ActionLink("Today's Readings", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Music Ministry", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Altar Services", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Lectors", "ComingSoon", "Home")</li>
+                <li class="dropdown">
+                    <a href="#">Devotions</a>
+                    <ul class="sub-menu">
+                        <li>@Html.ActionLink("Rosary", "ComingSoon", "Home")</li>
+                        <li>@Html.ActionLink("Adoration", "ComingSoon", "Home")</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            @Html.ActionLink("RELIGIOUS EDUCATION", "Index", "ReligiousEd")
+            <ul class="sub-menu">
+                <li>@Html.ActionLink("Religious Ed", "Index", "ReligiousEd")</li>
+                <li class="dropdown">
+                    <a href="#">Programs</a>
+                    <ul class="sub-menu">
+                        <li>@Html.ActionLink("Sunday", "ComingSoon", "Home")</li>
+                        <li>@Html.ActionLink("First Communion", "ComingSoon", "Home")</li>
+                        <li>@Html.ActionLink("Summer", "ComingSoon", "Home")</li>
+                        <li>@Html.ActionLink("Confirmation", "ComingSoon", "Home")</li>
+                    </ul>
+                </li>
+                <li>@Html.ActionLink("RCIA", "RCIA", "ReligiousEd")</li>
+                <li>@Html.ActionLink("Registration Form", "Registration", "ReligiousEd")</li>
+                <li>@Html.ActionLink("Religious Ed Calendar", "ComingSoon", "Home")</li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            @Html.ActionLink("BAPTISM", "Index", "Baptism")
+            <ul class="sub-menu">
+                <li>@Html.ActionLink("What is Baptism", "Index", "Baptism")</li>
+                <li>@Html.ActionLink("Baptism For Infants & Children Under 7", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Dates For Baptism & Baptism Inaugral Dinner", "BaptismDates", "Baptism")</li>
+                <li>@Html.ActionLink("Baptism For Adults & Children Over 7", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Online Form", "OnlineForm", "Baptism")</li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            @Html.ActionLink("FUNERAL", "Index", "Funeral")
+            <ul class="sub-menu">
+                <li>@Html.ActionLink("Recent and Upcoming Funerals", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Readings", "FuneralReadings", "Funeral")</li>
+                <li>@Html.ActionLink("Music/Hymns", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Funeral Procedures and Protocol", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Funeral home Info Sheet", "FuneralHomeInfo", "Funeral")</li>
+                <li>@Html.ActionLink("Funeral Request Form", "OnlineForm", "Funeral")</li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+ 

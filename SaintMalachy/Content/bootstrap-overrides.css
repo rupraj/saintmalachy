@@ -1,0 +1,114 @@
+﻿h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'cinzel',serif !important;
+}
+.h2 {
+    font-family: 'cinzel',serif !important;
+}
+
+.h4 {
+    font-family: 'cinzel',serif !important;
+    color: #000;
+}
+
+.breadcrumb a {
+    padding: 8px !important;
+    font-size: 19px;
+    color: #000 !important;
+}
+.breadcrumb a:hover {
+    text-decoration: none !important;
+    background-color: #cacdca /*#d9ead9*/;
+    color: #fff !important;
+    border-radius: 4px;
+}
+
+.headerlink {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d9ead9;
+}
+
+.imgContent {
+    width: 800px;
+    position: relative;
+    float: left;
+}
+
+.divider {
+    height: 450px;
+    position: relative;
+    float: left;
+    background-color: #919191;
+    width: 3px;
+}
+
+.rightsideContent {
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 100%;
+}
+
+/*column styles*/
+.col-md-8 {
+    padding-right: 10px !important;
+}
+/*breadcrumb style*/
+.breadcrumb {
+    background-color: #fff !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+/*Panel style*/
+.panel {
+    margin-bottom: 0px !important;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.panel-heading {
+    background-color:#bababa !important; /*#a3a3a3 !important #808080 !important*/;
+    border-color: #bababa !important;/*#a3a3a3 !important;*/
+}
+
+.panel-title {
+    font-weight: bold;
+    padding-left: 50px;
+    color:#000;
+}
+
+.panel-primary {
+    border-color: #bababa !important;/*#a3a3a3 !important;*/
+}
+
+.panel-body {
+    padding: 0px 15px 0px 15px !important;
+    height: 410px;
+    overflow-y: auto;
+}
+
+/*navbar style*/
+.navbar-default {
+    margin-left: 15px;
+    width: 98%;
+}
+
+/*carousel control style*/
+.carousel-control.right{
+    /*left:617px !important;*/
+}
+
+.carouselcontainer {
+    /*background-color:#efefef;*/
+    position: relative;
+    float: left;
+    width: 105%;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.carousel {
+    /*background-color:#efefef;*/
+    position: relative;
+    float: left;
+    border-radius: 2px;
+}

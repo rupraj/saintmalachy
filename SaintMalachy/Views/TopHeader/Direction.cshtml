@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Direction";
+}
+
+<div id="mapContainer" class="container row">
+    <div id="directionsPanelContainer" class="col-md-6">
+        <div id="directionFieldsContainer">
+            <div class="col-md-10">
+                <label class="label-primary">From:</label>
+                <input type="text" class="form-control" id="fromAddress" />
+            </div>
+            @*<div class="col-md-6">
+                <label class="label-primary">To:</label>
+                <input type="text" disabled class="form-control" value="99 Bedford St, Burlington, MA 01803" id="toAddress" />
+                
+            </div>*@
+            <div class="pull-left">
+                <button type="button" id="btnDirections" class="btn btn-success">Get Directions</button>
+            </div>
+            <div id="directionsPanel" class="pull-left"></div>
+        </div>
+            
+    </div>
+    <div id="map" class="col-md-6 mapHeight">
+
+    </div>
+</div>
+
+
+@*<button value="Get Directions" onclick="calcRoute()">Get Directions</button>*@
+<script src="~/Scripts/Direction.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkQRJDliFIwAKP13mmk8jNTp1BZ2A01c0&callback=initMap"></script>

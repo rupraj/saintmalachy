@@ -1,0 +1,115 @@
+﻿
+
+@{
+    ViewBag.Title = "Funeral Request Online Form";
+    Layout = "~/Views/Shared/Funeral_Layout.cshtml";
+}
+<div class="container row">
+    <div class="col-md-9 paddingleftremove">
+        <h2>Funeral Request Online Form</h2>
+        <hr />
+        <div class="col-md-12 row text-danger">
+            *** PLEASE  Fill in the entire sheet, if not applicable please write “N/A”, when complete hit the submit button to EMAIL and the rectory staff will receive all this information
+        </div>
+        <div class="onlineFormTopMargin">
+            <form class="form-horizontal paddingleftremove" id="funeralform" method="get">
+                <div class="form-group">
+                    <label for="NameOfDeceased" class="col-md-3 control-label textAlignForm labelWidth">Name Of Deceased<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="NameOfDeceased" id="NameOfDeceased" placeholder="Name Of Deceased" type="text" required />
+                    </div>
+                    <label for="Address" class="col-md-3 control-label textAlignForm labelWidth">Address<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="Address" id="Address" placeholder="Address" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Age" class="col-md-3 control-label textAlignForm labelWidth">Age<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="Age" id="Age" placeholder="Age" type="text" required />
+                    </div>
+                    <label for="DateOfBirth" class="col-md-3 control-label textAlignForm labelWidth">Date Of Birth<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="DateOfBirth" id="DateOfBirth" placeholder="Date Of Birth" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DateOfDeath" class="col-md-3 control-label textAlignForm labelWidth">Date Of Death<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="DateOfDeath" id="DateOfDeath" placeholder="Date of Death" type="text" required />
+                    </div>
+                    <label for="KinRelationship" class="col-md-3 control-label textAlignForm labelWidth">Next of Kin and Relationship<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="KinRelationship" id="KinRelationship" placeholder="Example: Mary Jones, Wife" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="KinAddress" class="col-md-3 control-label textAlignForm labelWidth">Next of Kin Address<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="KinAddress" id="KinAddress" placeholder="Next of Kin Address" type="text" required />
+                    </div>
+                    <label for="KinPhoneNumber" class="col-md-3 control-label textAlignForm labelWidth">Next of Kin Phone Number<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="KinPhoneNumber" id="KinPhoneNumber" placeholder="Next of Kin Phone Number" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="FuneralHome" class="col-md-3 control-label textAlignForm labelWidth">Funeral Home<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="FuneralHome" id="FuneralHome" placeholder="Funeral Home" type="text" required />
+                    </div>
+                    <label for="FuneralHomeAddress" class="col-md-3 control-label textAlignForm labelWidth">Funeral Home Address<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="FuneralHomeAddress" id="FuneralHomeAddress" placeholder="Funeral Home Address" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="FuneralHomeUrl" class="col-md-3 control-label textAlignForm labelWidth">Funeral Home Website<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="FuneralHomeUrl" id="FuneralHomeUrl" placeholder="Funeral Home Website" type="text" required />
+                    </div>
+                    <label for="DateOfFuneral" class="col-md-3 control-label textAlignForm labelWidth">Date of Funeral<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="DateOfFuneral" id="DateOfFuneral" placeholder="Date of Funeral" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="TimeOfFuneral" class="col-md-3 control-label textAlignForm labelWidth">Time of Funeral<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="TimeOfFuneral" id="TimeOfFuneral" placeholder="Time of Funeral" type="text" required />
+                    </div>
+                    <label for="DateOfWake" class="col-md-3 control-label textAlignForm labelWidth">Date of Wake<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="DateOfWake" id="DateOfWake" placeholder="Date of Wake" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="TimeOfWake" class="col-md-3 control-label textAlignForm labelWidth">Time of Wake<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <textarea class="form-control" rows="5" name="TimeOfWake" id="TimeOfWake" placeholder="Enter NO Wake or Times of Wake" required></textarea>
+                    </div>
+                    <label for="Cemetry" class="col-md-3 control-label textAlignForm labelWidth">Cemetry<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="Cemetry" id="Cemetry" placeholder="Enter name and town" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Comments" class="col-md-3 control-label textAlignForm labelWidth">Additional Comments:</label>
+                    <div class="col-md-6 controlWidth">
+                        <textarea class="form-control" rows="5" id="Comments"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button id="Submit" type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+

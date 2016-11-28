@@ -1,0 +1,92 @@
+/* =Styles for the lab
+-------------------------------------------------------------- */
+#wrapper {
+	min-width:1000px;
+}
+nav {
+    font-size:15px;
+    border-top:5px solid #79b479;
+    border-bottom:2px solid #79b479;
+	/*background-color:#7a7a7a;/*#79b479; #7a7a7a;#676767;*/
+    margin:20px 0px 0px 15px !important;
+    width:98%;
+    /*border-radius:2px;*/
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+/* sub navigation */
+nav li ul {
+    font-size:15px;    
+    background-color:#a2c7a2;/*#7a7a7a;*//*#676767;*/
+    position:absolute;
+    left:0;
+    top:30px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+    z-index:999999;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:30px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#000;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:#000;
+    text-decoration:none;
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px #fff;
+    margin:0 10px;
+    padding:0;
+}
+
+nav li li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('Images/arrow-down.png');
+    background-position:right 20px;
+    background-repeat:no-repeat;
+}
+
+nav li li.dropdown > a {
+    background-image:url('Images/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}

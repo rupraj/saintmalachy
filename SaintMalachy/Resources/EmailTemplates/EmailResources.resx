@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BaptismOnlineForm" xml:space="preserve">
+    <value>&lt;table width="100%" cellpadding="0" cellspacing="0"&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="background-color:#a2c7a2;padding:15px 5px 5px 15px;"&gt;
+                &lt;h3&gt;Baptism Request Details:&lt;/h3&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Baptism Date:&amp;nbsp;[[BaptismDate]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Dinner Preparation:&amp;nbsp;[[DinnerDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child's Last Name:&amp;nbsp;[[ChildLastName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child's Name:&amp;nbsp;[[ChildName]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child's DOB:&amp;nbsp;[[ChildDOB]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child's Place Of Birth:&amp;nbsp;[[ChildPlaceOfBirth]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Father's Full Name:&amp;nbsp;[[FatherFullName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Mother's First Name:&amp;nbsp;[[MotherFirstName]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Mother's Maiden Name:&amp;nbsp;[[MotherMaidenName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Are Parents Married:&amp;nbsp;[[ParentsMarried]]&lt;/td&gt;
+            
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Were Married in Catholic Church:&amp;nbsp;[[ChurchMarriage]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Has Parents Been Confirmed:&amp;nbsp;[[ParentsConfirmed]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;City, State:&amp;nbsp;[[CityState]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Address:&amp;nbsp;[[Address]]&lt;/td&gt;
+            
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0""&gt;Email:&amp;nbsp;[[Email]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Phone:&amp;nbsp;[[Phone]]&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td colspan="2" style="padding:15px 5px 5px 15px;background-color:#e0e0e0;border-radius:5px"&gt;&lt;h3&gt;GODPARENT/SPONSOR Information&lt;/h3&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Godfather Name:&amp;nbsp;[[GodfatherName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Godfather Religion:&amp;nbsp;[[GodfatherReligion]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Godfather Confirmed:&amp;nbsp;[[GodfatherConfirmed]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Godmother Name:&amp;nbsp;[[GodmotherName]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Godmother Religion:&amp;nbsp;[[GodmotherReligion]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Godmother Confirmed:&amp;nbsp;[[GodmotherConfirmed]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Comments/Questions:&amp;nbsp;[[CommentsQuestions]]&lt;/td&gt;
+
+        &lt;/tr&gt;
+    &lt;/table&gt;</value>
+  </data>
+  <data name="FuneralHomeInfo" xml:space="preserve">
+    <value>&lt;table width="100%" cellpadding="0" cellspacing="0"&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="background-color:#a2c7a2;padding:15px 5px 5px 15px;"&gt;
+                &lt;h3&gt;Funeral Home Info Sheet:&lt;/h3&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Name Of Deceased:&amp;nbsp;[[NameOfDeceased]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Date Of Birth:&amp;nbsp;[[DateOfBirth]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Date Of Death:&amp;nbsp;[[DateOfDeath]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Funeral Home:&amp;nbsp;[[FuneralHome]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Date of Funeral:&amp;nbsp;[[DateOfFuneral]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Time of Funeral:&amp;nbsp;[[TimeOfFuneral]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Date of Wake:&amp;nbsp;[[DateOfWake]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Time of Wake:&amp;nbsp;[[TimeOfWake]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Processional Song:&amp;nbsp;[[ProcessionalSong]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Responsorial Psalm:&amp;nbsp;[[ResponsorialPsalm]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Offertory Song:&amp;nbsp;[[OffertorySong]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Communion Song:&amp;nbsp;[[CommunionSong]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Recessional Song:&amp;nbsp;[[RecessionalSong]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Other Hymns:&amp;nbsp;[[OtherHymns]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Reader Number 1 and Reading:&amp;nbsp;[[ReaderOneReading]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Reader Number 2 and Reading:&amp;nbsp;[[ReaderTwoReading]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Presentation of Gifts:&amp;nbsp;[[PresentationOfGifts]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Eulogy:&amp;nbsp;[[Eulogy]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Additional Comments:&amp;nbsp;[[Comments]]&lt;/td&gt;
+            
+        &lt;/tr&gt;
+    &lt;/table&gt;</value>
+  </data>
+  <data name="FuneralRequestForm" xml:space="preserve">
+    <value>&lt;table width="100%" cellpadding="0" cellspacing="0"&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="background-color:#a2c7a2;padding:15px 5px 5px 15px;"&gt;
+                &lt;h3&gt;Funeral Request Details:&lt;/h3&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Name Of Deceased:&amp;nbsp;[[NameOfDeceased]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Address:&amp;nbsp;[[Address]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Age:&amp;nbsp;[[Age]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Date Of Birth:&amp;nbsp;[[DateOfBirth]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Date Of Death:&amp;nbsp;[[DateOfDeath]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Next of Kin and Relationship:&amp;nbsp;[[KinRelationship]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Next of Kin Address:&amp;nbsp;[[KinAddress]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Next of Kin Phone Number:&amp;nbsp;[[KinPhoneNumber]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Funeral Home:&amp;nbsp;[[FuneralHome]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Funeral Home Address:&amp;nbsp;[[FuneralHomeAddress]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Funeral Home Website:&amp;nbsp;[[FuneralHomeUrl]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Date of Funeral:&amp;nbsp;[[DateOfFuneral]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Time of Funeral:&amp;nbsp;[[TimeOfFuneral]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Date of Wake:&amp;nbsp;[[DateOfWake]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Time of Wake:&amp;nbsp;[[TimeOfWake]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Cemetry:&amp;nbsp;[[Cemetry]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Comments:&amp;nbsp;[[Comments]]&lt;/td&gt;
+            
+        &lt;/tr&gt;
+    &lt;/table&gt;</value>
+  </data>
+  <data name="ReligiousEdForm" xml:space="preserve">
+    <value>&lt;table width="100%" cellpadding="0" cellspacing="0"&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="background-color:#a2c7a2;padding:15px 5px 5px 15px;"&gt;
+                &lt;h3&gt;Religious Education Request Details:&lt;/h3&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Today's Date:&amp;nbsp;[[TodayDate]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Family Name:&amp;nbsp;[[FamilyName]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Address:&amp;nbsp;[[Address]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;City:&amp;nbsp;[[City]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;State:&amp;nbsp;[[State]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Zip Code:&amp;nbsp;[[ZipCode]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Phone:&amp;nbsp;[[Phone]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Family Email (the one you check):&amp;nbsp;[[FamilyEmail]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Father's First Name:&amp;nbsp;[[FatherFirstName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Father's Last Name:&amp;nbsp;[[FatherLastName]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Father's Email Address:&amp;nbsp;[[FatherEmail]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Mother's First Name:&amp;nbsp;[[MotherFirstName]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Mother's Last Name:&amp;nbsp;[[MotherLastName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Mother's Maiden Name:&amp;nbsp;[[MotherMaiden]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Mother's Email Address:&amp;nbsp;[[MotherEmail]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="padding:15px 5px 5px 15px;background-color:#e0e0e0;border-radius:5px"&gt;&lt;h3&gt;I want to help!!&lt;/h3&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;I am interested in teaching:&amp;nbsp;[[Teaching]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;I am interested in helping (but not teaching):&amp;nbsp;[[Helping]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;My middle schooler, highschooler, or college kid would like to help!!:&amp;nbsp;[[KidHelping]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;If interested in helping submit Name and grade you are interested in helping with:&amp;nbsp;[[HelpInterest]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="padding:15px 5px 5px 15px;background-color:#e0e0e0;border-radius:5px"&gt;&lt;h3&gt;Children's Information&lt;/h3&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #1's First Name:&amp;nbsp;[[Child1FirstName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #1's Middle Initial:&amp;nbsp;[[Child1MiddleInitial]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #1's Last Name:&amp;nbsp;[[Child1LastName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #1's Grade in September 2016:&amp;nbsp;[[Child1Grade]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #1's Date of Birth:&amp;nbsp;[[Child1DOB]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #1's Email (If relevant):&amp;nbsp;[[Child1Email]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #1's Place of Baptism:&amp;nbsp;[[Child1BaptismPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #1's Date of Baptism:&amp;nbsp;[[Child1BaptismDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #1's Place of First Eucharist:&amp;nbsp;[[Child1EucharistPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #1's Date of First Eucharist:&amp;nbsp;[[Child1EucharistDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #1's Sacramental Records:[[sacrecords1]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #1's Religious Ed Class Choice:&amp;nbsp;[[reledchoice1]]&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #2's First Name:&amp;nbsp;[[Child2FirstName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #2's Middle Initial:&amp;nbsp;[[Child2MiddleInitial]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #2's Last Name:&amp;nbsp;[[Child2LastName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #2's Grade in September 2016:&amp;nbsp;[[Child2Grade]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #2's Date of Birth:&amp;nbsp;[[Child2DOB]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #2's Email (If relevant):&amp;nbsp;[[Child2Email]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #2's Place of Baptism:&amp;nbsp;[[Child2BaptismPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #2's Date of Baptism:&amp;nbsp;[[Child2BaptismDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #2's Place of First Eucharist:&amp;nbsp;[[Child2EucharistPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #2's Date of First Eucharist:&amp;nbsp;[[Child2EucharistDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #2's Sacramental Records:[[sacrecords2]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #2's Religious Ed Class Choice:&amp;nbsp;[[reledchoice2]]&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #3's First Name:&amp;nbsp;[[Child3FirstName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #3's Middle Initial:&amp;nbsp;[[Child3MiddleInitial]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #3's Last Name:&amp;nbsp;[[Child3LastName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #3's Grade in September 2016:&amp;nbsp;[[Child3Grade]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #3's Date of Birth:&amp;nbsp;[[Child3DOB]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #3's Email (If relevant):&amp;nbsp;[[Child3Email]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #3's Place of Baptism:&amp;nbsp;[[Child3BaptismPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #3's Date of Baptism:&amp;nbsp;[[Child3BaptismDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #3's Place of First Eucharist:&amp;nbsp;[[Child3EucharistPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #3's Date of First Eucharist:&amp;nbsp;[[Child3EucharistDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #3's Sacramental Records:[[sacrecords3]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #3's Religious Ed Class Choice:&amp;nbsp;[[reledchoice3]]&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #4's First Name:&amp;nbsp;[[Child4FirstName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #4's Middle Initial:&amp;nbsp;[[Child4MiddleInitial]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #4's Last Name:&amp;nbsp;[[Child4LastName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #4's Grade in September 2016:&amp;nbsp;[[Child4Grade]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #4's Date of Birth:&amp;nbsp;[[Child4DOB]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #4's Email (If relevant):&amp;nbsp;[[Child4Email]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #4's Place of Baptism:&amp;nbsp;[[Child4BaptismPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #4's Date of Baptism:&amp;nbsp;[[Child4BaptismDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #4's Place of First Eucharist:&amp;nbsp;[[Child4EucharistPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #4's Date of First Eucharist:&amp;nbsp;[[Child4EucharistDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #4's Sacramental Records:[[sacrecords4]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #4's Religious Ed Class Choice:&amp;nbsp;[[reledchoice4]]&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #5's First Name:&amp;nbsp;[[Child5FirstName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #5's Middle Initial:&amp;nbsp;[[Child5MiddleInitial]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #5's Last Name:&amp;nbsp;[[Child5LastName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #5's Grade in September 2016:&amp;nbsp;[[Child5Grade]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #5's Date of Birth:&amp;nbsp;[[Child5DOB]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #5's Email (If relevant):&amp;nbsp;[[Child5Email]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #5's Place of Baptism:&amp;nbsp;[[Child5BaptismPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #5's Date of Baptism:&amp;nbsp;[[Child5BaptismDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #5's Place of First Eucharist:&amp;nbsp;[[Child5EucharistPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #5's Date of First Eucharist:&amp;nbsp;[[Child5EucharistDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #5's Sacramental Records:[[sacrecords5]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #5's Religious Ed Class Choice:&amp;nbsp;[[reledchoice5]]&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #6's First Name:&amp;nbsp;[[Child6FirstName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #6's Middle Initial:&amp;nbsp;[[Child6MiddleInitial]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #6's Last Name:&amp;nbsp;[[Child6LastName]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #6's Grade in September 2016:&amp;nbsp;[[Child6Grade]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #6's Date of Birth:&amp;nbsp;[[Child6DOB]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #6's Email (If relevant):&amp;nbsp;[[Child6Email]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #6's Place of Baptism:&amp;nbsp;[[Child6BaptismPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #6's Date of Baptism:&amp;nbsp;[[Child6BaptismDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #6's Place of First Eucharist:&amp;nbsp;[[Child6EucharistPlace]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #6's Date of First Eucharist:&amp;nbsp;[[Child6EucharistDate]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style="width:500px;padding:5px;background-color:#ecebeb;border-bottom:1px solid #d0d0d0"&gt;Child #6's Sacramental Records:[[sacrecords6]]&lt;/td&gt;
+            &lt;td style="width:auto;padding:5px;background-color:#e6e6e6;border-bottom:1px solid #d0d0d0"&gt;Child #6's Religious Ed Class Choice:&amp;nbsp;[[reledchoice6]]&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="padding:15px 5px 5px 15px;background-color:#e0e0e0;border-radius:5px"&gt;&lt;h3&gt;Payment&lt;/h3&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2" style="padding:15px 5px 5px 15px;background-color:#e0e0e0;border-radius:5px"&gt;Amount Due:[[amtdue]]&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;</value>
+  </data>
+</root>

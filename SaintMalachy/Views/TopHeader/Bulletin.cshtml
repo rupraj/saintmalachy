@@ -1,0 +1,28 @@
+﻿@model SaintMalachy.Models.BulletinModel
+@{
+    ViewBag.Title = "Bulletin";
+}
+<div class="container row">
+    <div class="col-md-12 paddingRemoveLeft">
+        <h3>Latest Bulletins</h3>
+        <hr />
+        <p>
+            When on Summer Schedule, Bulletin is every other week
+        </p>
+        <div id="bulletinList" class="bulletinContainer">
+            @foreach(var item in Model.Bulletins)
+            {
+                <div class="bulletinItem">
+                    <div>
+                        <b>@item.bulletinTitle</b>
+                    </div>
+                    <div class="bulletinImageContainer">
+                        <a href="@item.bulletinPdfUrl" target="_blank">
+                            <img src="@item.bulletinImageUrl"/>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

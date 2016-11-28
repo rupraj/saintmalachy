@@ -1,0 +1,129 @@
+﻿
+
+@{
+    ViewBag.Title = "Funeral Home Info Sheet";
+    Layout = "~/Views/Shared/Funeral_Layout.cshtml";
+}
+<div class="container row">
+    <div class="col-md-9 paddingleftremove">
+        <h2>Funeral Home Info Sheet</h2>
+        <hr />
+        <div class="col-md-12 row text-danger">
+            *** PLEASE  Fill in the entire sheet, if not applicable please write “N/A”, when complete hit the submit button to EMAIL and the rectory staff will receive all this information
+        </div>
+        <div class="onlineFormTopMargin">
+            <form class="form-horizontal paddingleftremove" id="funeralhomeinfoform" method="get">
+                <div class="form-group">
+                    <label for="NameOfDeceased" class="col-md-3 control-label textAlignForm labelWidth">Name Of Deceased<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="NameOfDeceased" id="NameOfDeceased" placeholder="Name Of Deceased" type="text" required />
+                    </div>
+                    <label for="DateOfBirth" class="col-md-3 control-label textAlignForm labelWidth">Date Of Birth<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="DateOfBirth" id="DateOfBirth" placeholder="Date Of Birth" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DateOfDeath" class="col-md-3 control-label textAlignForm labelWidth">Date Of Death<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="DateOfDeath" id="DateOfDeath" placeholder="Date of Death" type="text" required />
+                    </div>
+                    <label for="FuneralHome" class="col-md-3 control-label textAlignForm labelWidth">Funeral Home<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="FuneralHome" id="FuneralHome" placeholder="Funeral Home" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DateOfFuneral" class="col-md-3 control-label textAlignForm labelWidth">Date of Funeral<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="DateOfFuneral" id="DateOfFuneral" placeholder="Date of Funeral" type="text" required />
+                    </div>
+                    <label for="TimeOfFuneral" class="col-md-3 control-label textAlignForm labelWidth">Time of Funeral<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="TimeOfFuneral" id="TimeOfFuneral" placeholder="Time of Funeral" type="text" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="DateOfWake" class="col-md-3 control-label textAlignForm labelWidth">Date of Wake<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="DateOfWake" id="DateOfWake" placeholder="Date of Wake" type="text" required />
+                    </div>
+                    <label for="TimeOfWake" class="col-md-3 control-label textAlignForm labelWidth">Time of Wake<span class="error">*</span>:</label>
+                    <div class="col-md-6 controlWidth">
+                        <textarea class="form-control" rows="5" name="TimeOfWake" id="TimeOfWake" placeholder="Enter NO Wake or Times of Wake" required></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12 row">
+                    <h2>Funeral Liturgy</h2>
+                    <hr />
+                    <p>Listed below are desired Songs, Hymns and Participants for the Funeral Mass.</p>
+                </div>
+                <div class="form-group">
+                    <label for="ProcessionalSong" class="col-md-3 control-label textAlignForm labelWidth">Processional Song:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="ProcessionalSong" id="ProcessionalSong" placeholder="Processional Song" type="text" />
+                    </div>
+                    <label for="ResponsorialPsalm" class="col-md-3 control-label textAlignForm labelWidth">Responsorial Psalm:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="ResponsorialPsalm" id="ResponsorialPsalm" placeholder="Responsorial Psalm" type="text" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="OffertorySong" class="col-md-3 control-label textAlignForm labelWidth">Offertory Song:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="OffertorySong" id="OffertorySong" placeholder="Offertory Song" type="text" />
+                    </div>
+                    <label for="CommunionSong" class="col-md-3 control-label textAlignForm labelWidth">Communion Song:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="CommunionSong" id="CommunionSong" placeholder="Communion Song" type="text" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="RecessionalSong" class="col-md-3 control-label textAlignForm labelWidth">Recessional Song:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="RecessionalSong" id="RecessionalSong" placeholder="Recessional Song" type="text" />
+                    </div>
+                    <label for="OtherHymns" class="col-md-3 control-label textAlignForm labelWidth">Other Hymns:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="OtherHymns" id="OtherHymns" placeholder="Other Hymns" type="text" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ReaderOneReading" class="col-md-3 control-label textAlignForm labelWidth">Reader Number 1 and Reading:</label>
+                    <div class="col-md-6 controlWidth">
+                        <textarea class="form-control" rows="5" id="ReaderOneReading" placeholder="Please enter a readers name and the reading"></textarea>
+                    </div>
+                    <label for="ReaderTwoReading" class="col-md-3 control-label textAlignForm labelWidth">Reader Number 2 and Reading:</label>
+                    <div class="col-md-6 controlWidth">
+                        <textarea class="form-control" rows="5" id="ReaderTwoReading" placeholder="Please enter a readers name and the reading"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="PresentationOfGifts" class="col-md-3 control-label textAlignForm labelWidth">Presentation of Gifts:</label>
+                    <div class="col-md-6 controlWidth">
+                        <textarea class="form-control" rows="5" id="Comments" placeholder="Please enter the Names of the persons who will bring forward the gifts"></textarea>
+                    </div>
+                    <label for="Eulogy" class="col-md-3 control-label textAlignForm labelWidth">Eulogy:</label>
+                    <div class="col-md-6 controlWidth">
+                        <input class="form-control" name="Eulogy" id="Eulogy" placeholder="Please enter the name of One Person who will give a 5 Minute or less Eulogy" type="text" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Comments" class="col-md-3 control-label textAlignForm labelWidth">Additional Comments:</label>
+                    <div class="col-md-6 controlWidth">
+                        <textarea class="form-control" rows="5" id="Comments"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button id="Submit" type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
