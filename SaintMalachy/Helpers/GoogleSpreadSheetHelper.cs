@@ -96,7 +96,7 @@ namespace SaintMalachy.Helpers
             }
             catch (Exception ex) {
                 stmalachy malachyContext = new stmalachy();
-                malachyContext.ErrorLogged.Add(new ErrorLog { createdon = DateTime.Now, model = Newtonsoft.Json.JsonConvert.SerializeObject(model), modulename = "GoogleSpreadSheetHelper - Religious Ed", stackTrace = ex.StackTrace });
+                malachyContext.ErrorLogged.Add(new ErrorLog { createdon = DateTime.Now, model = Newtonsoft.Json.JsonConvert.SerializeObject(model), modulename = "GoogleSpreadSheetHelper - Religious Ed", stackTrace = ex.ToString() });
                 malachyContext.SaveChanges();
             }
         }
@@ -112,7 +112,6 @@ namespace SaintMalachy.Helpers
                     string credPath = HostingEnvironment.MapPath("~\\SpreadSheet\\");
 
                     credPath = Path.Combine(credPath, ".credentials\\stmalachyspreadsheet.json");
-
                     credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                         GoogleClientSecrets.Load(stream).Secrets,
                         Scopes,
@@ -145,7 +144,7 @@ namespace SaintMalachy.Helpers
             catch (Exception ex)
             {
                 stmalachy malachyContext = new stmalachy();
-                malachyContext.ErrorLogged.Add(new ErrorLog { createdon = DateTime.Now, model = Newtonsoft.Json.JsonConvert.SerializeObject(model), modulename = "GoogleSpreadSheetHelper - Baptism", stackTrace = ex.StackTrace });
+                malachyContext.ErrorLogged.Add(new ErrorLog { createdon = DateTime.Now, model = Newtonsoft.Json.JsonConvert.SerializeObject(model), modulename = "GoogleSpreadSheetHelper - Baptism", stackTrace = ex.ToString() });
                 malachyContext.SaveChanges();
             }
         }
