@@ -42,7 +42,7 @@ namespace SaintMalachy.Helpers
                     using (var stream =
                         new FileStream(HostingEnvironment.MapPath("~\\SpreadSheet\\client_secret_saintmalachy.json"), FileMode.Open, FileAccess.Read))
                     {
-                        string credPath = HostingEnvironment.MapPath("~\\SpreadSheet");
+                        string credPath = HostingEnvironment.MapPath("~\\SpreadSheet\\");
 
                         credPath = Path.Combine(credPath, ".credentials\\stmalachyspreadsheet.json");
 
@@ -109,7 +109,7 @@ namespace SaintMalachy.Helpers
                 using (var stream =
                     new FileStream(HostingEnvironment.MapPath("~\\SpreadSheet\\client_secret_saintmalachy.json"), FileMode.Open, FileAccess.Read))
                 {
-                    string credPath = HostingEnvironment.MapPath("~\\SpreadSheet");
+                    string credPath = HostingEnvironment.MapPath("~\\SpreadSheet\\");
 
                     credPath = Path.Combine(credPath, ".credentials\\stmalachyspreadsheet.json");
 
