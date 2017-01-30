@@ -26,11 +26,11 @@ namespace SaintMalachy.Helpers
                 case "FuneralRequestModel":
                     malachyContext.FuneralRequest.Add(data as FuneralRequestModel);
                     malachyContext.SaveChanges();
-                    return SendEmail(ProcessFuneralRequestEmailBody(data as FuneralRequestModel), GlobalConstants.funeralEmailSubject,GlobalConstants.officeemailaddress);
+                    return SendEmail(ProcessFuneralRequestEmailBody(data as FuneralRequestModel), GlobalConstants.funeralEmailSubject,GlobalConstants.bulletinemailaddress);
                 case "FuneralHomeInfoModel":
                     malachyContext.FuneralHomeInfo.Add(data as FuneralHomeInfoModel);
                     malachyContext.SaveChanges();
-                    return SendEmail(ProcessFuneralHomeInfoEmailBody(data as FuneralHomeInfoModel), GlobalConstants.funeralHomeInfoSubject,GlobalConstants.officeemailaddress);
+                    return SendEmail(ProcessFuneralHomeInfoEmailBody(data as FuneralHomeInfoModel), GlobalConstants.funeralHomeInfoSubject,GlobalConstants.bulletinemailaddress);
                 case "ReligiousEdModel":
                     ReligiousEdModel model = data as ReligiousEdModel;
                     model.sacrecords1 = GetSacramentRecords(model.sacrecords1);

@@ -27,5 +27,6 @@ namespace SaintMalachy.Helpers
 
         public static readonly string reledemailaddress = "religioused@saint-malachy.org";
         public static readonly string officeemailaddress = "office@saint-malachy.org";
+        public static readonly string bulletinemailaddress = "bulletin@saint-malachy.org";
     }
 }
