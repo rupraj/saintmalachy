@@ -219,6 +219,7 @@
     <Compile Include="Controllers\GoogleApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PdfController.cs" />
     <Compile Include="Controllers\ReligiousEdController.cs" />
     <Compile Include="Controllers\TopHeaderController.cs" />
     <Compile Include="Global.asax.cs">
@@ -337,6 +338,7 @@
     <Content Include="Content\Images\IndexButtons\Funeral.jpg" />
     <Content Include="Content\Images\IndexButtons\MassTime.jpg" />
     <Content Include="Content\Images\JubileeYearofMercy.jpg" />
+    <Content Include="Content\Images\RaceForGrace.jpg" />
     <Content Include="Content\Images\saintmalachy.jpg" />
     <Content Include="Content\Images\Staff\CamilleMainardi.jpg" />
     <Content Include="Content\Images\Staff\church1.jpg" />
@@ -371,6 +373,7 @@
     <Content Include="Content\client_secret.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\pdf\Race for Grace Flyer.pdf" />
     <None Include="Properties\PublishProfiles\SaintMalachy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Bulletin.js" />
@@ -472,6 +475,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="EmailTemplates\" />
+    <Folder Include="Views\Pdf\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
