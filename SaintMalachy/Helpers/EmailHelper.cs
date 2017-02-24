@@ -18,6 +18,20 @@ namespace SaintMalachy.Helpers
             string emailType = data.GetType().Name;
             switch (emailType)
             {
+                case "RaceForGrace":
+                    try {
+                        malachyContext.RaceForGrace.Add(data as RaceForGrace);
+                        malachyContext.SaveChanges();
+                        GoogleSpreadSheetHelper.InsertSpreadSheet<RaceForGrace>(data as RaceForGrace);
+                        return GlobalConstants.registSuccess;
+                    }
+                    catch (Exception ex)
+                    {
+                        return GlobalConstants.registFailure;
+                    }
+                    
+
+                    break;
                 case "BaptismRequestModel":
                     malachyContext.BaptismRequest.Add(data as BaptismRequestModel);
                     malachyContext.SaveChanges();

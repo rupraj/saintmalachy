@@ -219,6 +219,7 @@
     <Compile Include="Controllers\GoogleApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MiscController.cs" />
     <Compile Include="Controllers\PdfController.cs" />
     <Compile Include="Controllers\ReligiousEdController.cs" />
     <Compile Include="Controllers\TopHeaderController.cs" />
@@ -284,6 +285,14 @@
     <Compile Include="Migrations\201611210219516_ReligiousEdCreatedOn.Designer.cs">
       <DependentUpon>201611210219516_ReligiousEdCreatedOn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702230030286_RaceForGrace.cs" />
+    <Compile Include="Migrations\201702230030286_RaceForGrace.Designer.cs">
+      <DependentUpon>201702230030286_RaceForGrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702230213067_RaceForGraceUpdate.cs" />
+    <Compile Include="Migrations\201702230213067_RaceForGraceUpdate.Designer.cs">
+      <DependentUpon>201702230213067_RaceForGraceUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -295,6 +304,7 @@
     <Compile Include="Models\FuneralRequestModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\RaceForGrace.cs" />
     <Compile Include="Models\ReligiousEdModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\EmailTemplates\EmailResources.Designer.cs">
@@ -367,6 +377,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Scripts\Misc\RaceForGraceInit.js" />
     <Content Include="SpreadSheet\client_secret.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -471,6 +482,7 @@
     </Content>
     <Content Include="SpreadSheet\.credentials\sheets.googleapis.com-dotnet-quickstart.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" />
     <Content Include="SpreadSheet\.credentials\stmalachyspreadsheet.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" />
+    <Content Include="Views\Misc\RaceForGrace.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -490,6 +502,7 @@
     <TypeScriptCompile Include="Scripts\Funeral\FuneralRequestForm.ts" />
     <TypeScriptCompile Include="Scripts\Global\EmailHelper.ts" />
     <TypeScriptCompile Include="Scripts\Global\GlobalConstants.ts" />
+    <TypeScriptCompile Include="Scripts\Misc\RaceForGrace.ts" />
     <TypeScriptCompile Include="Scripts\ReligiousEd\ReligiousEd.ts" />
     <TypeScriptCompile Include="Scripts\typings\bootstrap\bootstrap.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery.form\jquery.form.d.ts" />
@@ -543,6 +556,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611210219516_ReligiousEdCreatedOn.resx">
       <DependentUpon>201611210219516_ReligiousEdCreatedOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702230030286_RaceForGrace.resx">
+      <DependentUpon>201702230030286_RaceForGrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702230213067_RaceForGraceUpdate.resx">
+      <DependentUpon>201702230213067_RaceForGraceUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\EmailTemplates\EmailResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

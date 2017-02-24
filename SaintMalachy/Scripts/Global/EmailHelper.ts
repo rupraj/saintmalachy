@@ -34,6 +34,11 @@
                         resetform = <HTMLFormElement>$("#ReligiousEd")[0];
                         resetform.reset();
                         break;
+                    case "raceforgrace":
+                        formId = "raceForGrace";
+                        resetform = <HTMLFormElement>$("#raceForGrace")[0];
+                        resetform.reset();
+                        break;
                     default:
                         break;
                 }

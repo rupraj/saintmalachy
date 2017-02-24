@@ -27,6 +27,7 @@ namespace SaintMalachy
         public virtual DbSet<FuneralRequestModel> FuneralRequest { get; set; }
         public virtual DbSet<ReligiousEdModel> ReligiousEd { get; set; }
         public virtual DbSet<ErrorLog> ErrorLogged { get; set; }
+        public virtual DbSet<RaceForGrace> RaceForGrace { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

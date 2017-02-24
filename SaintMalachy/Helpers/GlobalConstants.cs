@@ -9,6 +9,8 @@ namespace SaintMalachy.Helpers
     {
         public static readonly string emailSuccess = "Email sent successfully";
         public static readonly string emailFailure = "There was an error sending email";
+        public static readonly string registSuccess = "Registration Success";
+        public static readonly string registFailure = "Registration Failed";
         public static readonly string baptismEmailSubject = "Online Baptism Request";
         public static readonly string funeralEmailSubject = "Online Funeral Request";
         public static readonly string funeralHomeInfoSubject = "Funeral Home Info Sheet";

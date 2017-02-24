@@ -28,6 +28,9 @@ namespace SaintMalachy.Helpers
                 case "ReligiousEdModel":
                     InsertReligiousEdRecord(Data as ReligiousEdModel);
                     break;
+                case "RaceForGrace":
+                    InsertRaceForGraceRecord(Data as RaceForGrace);
+                    break;
                 default:
                     break;
             }
@@ -130,7 +133,7 @@ namespace SaintMalachy.Helpers
                     ValueRange valrange = new ValueRange();
                     valrange.Range = range;
                     valrange.MajorDimension = "ROWS";
-                                       
+
                     List<object> datalist = new List<object>();
                     var mylist = new List<object>() { model.CreatedOn, model.ChildLastName, model.ChildName, model.ChildDateOfBirth, model.ChildPlaceOfBirth, model.FatherFullName, model.MotherFirstName, model.MotherMaidenName, model.Address, model.CityState, model.Phone, model.Email, model.GodfatherName, model.GodfatherReligion, model.GodfatherConfirmed, model.GodmotherName, model.GodmotherReligion, model.GodmotherConfirmed, model.CommentsQuestions, model.BaptismDate, model.DinnerDate };
                     valrange.Values = new List<IList<object>> { mylist };
@@ -138,7 +141,55 @@ namespace SaintMalachy.Helpers
                         service.Spreadsheets.Values.Append(valrange, spreadsheetId, range);
                     request.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.RAW;
                     AppendValuesResponse response = request.Execute();
-                    
+
+                }
+            }
+            catch (Exception ex)
+            {
+                stmalachy malachyContext = new stmalachy();
+                malachyContext.ErrorLogged.Add(new ErrorLog { createdon = DateTime.Now, model = Newtonsoft.Json.JsonConvert.SerializeObject(model), modulename = "GoogleSpreadSheetHelper - Baptism", stackTrace = ex.ToString() });
+                malachyContext.SaveChanges();
+            }
+        }
+
+            private static void InsertRaceForGraceRecord(RaceForGrace model)
+        {
+            try
+            {
+                UserCredential credential;
+                using (var stream =
+                    new FileStream(HostingEnvironment.MapPath("~\\SpreadSheet\\client_secret_saintmalachy.json"), FileMode.Open, FileAccess.Read))
+                {
+                    string credPath = HostingEnvironment.MapPath("~\\SpreadSheet\\");
+
+                    credPath = Path.Combine(credPath, ".credentials\\stmalachyspreadsheet.json");
+                    credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                        GoogleClientSecrets.Load(stream).Secrets,
+                        Scopes,
+                        "user",
+                        CancellationToken.None,
+                        new FileDataStore(credPath, true)).Result;
+                    var service = new SheetsService(new BaseClientService.Initializer()
+                    {
+                        HttpClientInitializer = credential,
+                        ApplicationName = ApplicationName,
+                    });
+
+                    //// Define request parameters.
+                    String spreadsheetId = "1LkT7D461ooXEp12LwNunUlRRG3lXTU8NoqxZDu9ZKMk";
+                    String range = "Form Responses 1!A1:F";
+                    ValueRange valrange = new ValueRange();
+                    valrange.Range = range;
+                    valrange.MajorDimension = "ROWS";
+
+                    List<object> datalist = new List<object>();
+                    var mylist = new List<object>() { model.CreatedDate, model.FirstName, model.LastName, model.EmailAddress, model.DateOfBirth, model.Interest };
+                    valrange.Values = new List<IList<object>> { mylist };
+                    SpreadsheetsResource.ValuesResource.AppendRequest request =
+                        service.Spreadsheets.Values.Append(valrange, spreadsheetId, range);
+                    request.ValueInputOption = SpreadsheetsResource.ValuesResource.AppendRequest.ValueInputOptionEnum.RAW;
+                    AppendValuesResponse response = request.Execute();
+
                 }
             }
             catch (Exception ex)

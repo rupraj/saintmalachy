@@ -35,6 +35,11 @@ var EmailHelper = (function () {
                     resetform = $("#ReligiousEd")[0];
                     resetform.reset();
                     break;
+                case "raceforgrace":
+                    formId = "raceForGrace";
+                    resetform = $("#raceForGrace")[0];
+                    resetform.reset();
+                    break;
                 default:
                     break;
             }

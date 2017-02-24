@@ -30,6 +30,9 @@ namespace SaintMalachy
             bundles.Add(new ScriptBundle("~/bundles/breadcrumb").Include(
                       "~/Scripts/TopHeaderMenu.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/misc").Include(
+                     "~/Scripts/Misc/RaceForGrace.js", "~/Scripts/Misc/RaceForGraceInit.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/baptism").Include(
                       "~/Scripts/Baptism/BaptismForm.js", "~/Scripts/Baptism/BaptismFormInit.js"));
 
