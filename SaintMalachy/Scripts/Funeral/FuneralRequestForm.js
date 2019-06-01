@@ -1,6 +1,6 @@
 ///<reference path="../Global/GlobalConstants.ts" />
 ///<reference path="../Global/EmailHelper.ts" />
-var FuneralRequestForm = (function () {
+var FuneralRequestForm = /** @class */ (function () {
     function FuneralRequestForm() {
         this.funeralrequestEmailUrl = "/Funeral/SendRequestEmail";
         this.funeralhomeEmailUrl = "/Funeral/SendFuneralHomeInfoEmail";
@@ -71,12 +71,12 @@ var FuneralRequestForm = (function () {
     };
     return FuneralRequestForm;
 }());
-var FuneralRequestFormFields = (function () {
+var FuneralRequestFormFields = /** @class */ (function () {
     function FuneralRequestFormFields() {
     }
     return FuneralRequestFormFields;
 }());
-var FuneralHomeInfoSheetFields = (function () {
+var FuneralHomeInfoSheetFields = /** @class */ (function () {
     function FuneralHomeInfoSheetFields() {
     }
     return FuneralHomeInfoSheetFields;

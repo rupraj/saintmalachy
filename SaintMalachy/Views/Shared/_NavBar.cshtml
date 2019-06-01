@@ -36,7 +36,7 @@
             <a href="#">WORSHIP</a>
             <ul class="sub-menu">
                 <li>@Html.ActionLink("Today's Readings", "ComingSoon", "Home")</li>
-                <li>@Html.ActionLink("Music Ministry", "ComingSoon", "Home")</li>
+                <li>@Html.ActionLink("Music Ministry", "Index", "MusicMinistry")</li>
                 <li>@Html.ActionLink("Altar Services", "ComingSoon", "Home")</li>
                 <li>@Html.ActionLink("Lectors", "ComingSoon", "Home")</li>
                 <li class="dropdown">
@@ -66,16 +66,16 @@
                 <li>@Html.ActionLink("Religious Ed Calendar", "ComingSoon", "Home")</li>
             </ul>
         </li>
-        <li class="dropdown">
+        @*<li class="dropdown">
             @Html.ActionLink("BAPTISM", "Index", "Baptism")
             <ul class="sub-menu">
                 <li>@Html.ActionLink("What is Baptism", "Index", "Baptism")</li>
                 <li>@Html.ActionLink("Baptism For Infants & Children Under 7", "ComingSoon", "Home")</li>
-                <li>@Html.ActionLink("Dates For Baptism & Baptism Inaugral Dinner", "BaptismDates", "Baptism")</li>
+                <li>@Html.ActionLink("Dates For Baptism & Baptism Preparation", "BaptismDates", "Baptism")</li>
                 <li>@Html.ActionLink("Baptism For Adults & Children Over 7", "ComingSoon", "Home")</li>
                 <li>@Html.ActionLink("Online Form", "OnlineForm", "Baptism")</li>
             </ul>
-        </li>
+        </li>*@
         <li class="dropdown">
             @Html.ActionLink("FUNERAL", "Index", "Funeral")
             <ul class="sub-menu">
@@ -85,6 +85,13 @@
                 <li>@Html.ActionLink("Funeral Procedures and Protocol", "ComingSoon", "Home")</li>
                 <li>@Html.ActionLink("Funeral home Info Sheet", "FuneralHomeInfo", "Funeral")</li>
                 <li>@Html.ActionLink("Funeral Request Form", "OnlineForm", "Funeral")</li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a style="color:red; font-weight:bold;" href="https://osvonlinegiving.com/4486">ONLINE GIVING</a>
+            <ul class="sub-menu">
+                <li><a href="https://osvonlinegiving.com/4486">Online Giving Website</a></li>
+                <li>@Html.ActionLink("Online Giving Help Pdf", "OnlineGiving", "pdf")</li>
             </ul>
         </li>
     </ul>

@@ -26,6 +26,16 @@ namespace SaintMalachy.Controllers
             return View();
         }
 
+        public ActionResult SummerProg()
+        {
+            return View();
+        }
+
+        public ActionResult Confirmation()
+        {
+            return View();
+        }
+
         [HttpGet]
         public JsonResult SendEmail(ReligiousEdModel modelData)
         {

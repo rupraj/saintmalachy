@@ -1,4 +1,4 @@
-var UrlConstants = (function () {
+var UrlConstants = /** @class */ (function () {
     function UrlConstants() {
     }
     Object.defineProperty(UrlConstants, "URL", {

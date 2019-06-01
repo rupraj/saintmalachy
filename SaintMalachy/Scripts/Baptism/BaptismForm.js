@@ -1,6 +1,6 @@
 ///<reference path="../Global/GlobalConstants.ts" />
 ///<reference path="../Global/EmailHelper.ts" />
-var BaptismForm = (function () {
+var BaptismForm = /** @class */ (function () {
     function BaptismForm() {
         this.baptismSendEmailUrl = "/Baptism/SendEmail";
     }
@@ -39,7 +39,7 @@ var BaptismForm = (function () {
     };
     return BaptismForm;
 }());
-var BaptismFormFields = (function () {
+var BaptismFormFields = /** @class */ (function () {
     function BaptismFormFields() {
     }
     return BaptismFormFields;

@@ -115,14 +115,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .panel-heading {
-    background-color:#a2c7a2 !important/*#bababa !important*/; /*#a3a3a3 !important #808080 !important;*/
-    border-color: #a2c7a2 !important/*#bababa !important*/;/*#a3a3a3 !important;*/
+    /*background-color:#a2c7a2 !important*/
+    background-color:#188a18 !important;
+    border-color: #a2c7a2 !important;/*#bababa !important*/;/*#a3a3a3 !important;*/
 }
 
 .panel-title {
     font-weight: bold;
     padding-left: 50px;
-    color:#000 !important;
+    color:#fff !important;
 }
 
 .panel-primary {
@@ -182,6 +183,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     position: relative;
     float: left;
     border-radius: 2px;
+}
+
+.carousel-indicators{
+    bottom:-5px !important;
+}
+.carousel-indicators li{
+    border:1px solid #000 !important;
+}
+.carousel-indicators .active{
+    background-color:#7bfb09 !important;
 }
 
 /*list group*/
@@ -338,6 +349,9 @@ margin-left:-15px;
 }
 
 /*Religious Ed*/
+.religiousedDescription{
+    font-size:15px;
+}
 .religiousedBodyMargin{
     margin-top:8px !important;
 }
@@ -551,7 +565,6 @@ margin-left:-15px;
     border:2px solid #1f497d;
     color:#3b618e;
     text-align:center;
-    margin-bottom:5%;
 }
 
 .grade78{
@@ -559,7 +572,7 @@ margin-left:-15px;
     border:2px solid #c0504d;
     color:#602826;
     text-align:center;
-    margin-bottom:5%;
+    margin-bottom:15%;
 }
 
 .grade910{
@@ -658,3 +671,20 @@ hr{
 #baptismdateModal .modal-content{
     height:auto !important;
 }
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
+
+freebirdFormviewerViewFormContentWrapper.freebirdFormviewerViewCenteredContent {
+    width: auto !important;
+}
+

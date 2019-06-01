@@ -16,7 +16,7 @@ namespace SaintMalachy.Controllers
             return View();
         }
 
-        public ActionResult OnlineForm()
+        public ActionResult BaptismAtMalachy()
         {
             return View();
         }

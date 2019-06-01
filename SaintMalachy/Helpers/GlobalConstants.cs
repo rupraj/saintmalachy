@@ -20,15 +20,17 @@ namespace SaintMalachy.Helpers
         public static readonly string previouslySend = "Child's records have been sent previously";
         public static readonly string StMalachySacrament = "Child received all sacraments at St. Malachy's";
 
-        public static readonly string summerSession1 = "Summer Session 1 (GRADE 3-6 ONLY): Tuesday, June 21- Friday June 24 from 9:00am-2:00pm (+3classes)";
-        public static readonly string summerSession2 = "Summer Session 2 (GRADE 3-6 ONLY): Monday, June 27- Thursday, June 30 from 9:00am-2:00pm (+3classes)";
-        public static readonly string sundayProgram = "Sunday Program (GRADES 1-6): Sunday mornings 9:00am-10:15am (approx. 2 classes/month, schedule tba.)";
-        public static readonly string mondayNight = "7/8th Grade: Monday nights 6:30-7:30 (schedule tba)";
-        public static readonly string confirmation1 = "Confirmation 1 (GRADE 9) (schedule tba)";
-        public static readonly string confirmation2 = "Confirmation 2 (GRADE 10) (schedule tba)";
+        public static readonly string summerSession1 = "Summer Session 1 (GRADE 3-6 ONLY): Wednesday June 27-Saturday June 30, 9am-2pm (+3 additional gatherings during the year)";
+        public static readonly string sundayProgram = "Sunday Program (GRADES 1-6): Sunday mornings 9:00am-10:15am (approx. 2 classes/month)";
+        public static readonly string mondayNight = "7/8th Grade: Monday nights 6:30-8:00  (approx. 2 classes/month)";
+        public static readonly string confirmation1 = "Confirmation 1 (GRADE 9): Wednesday nights 6:30-8:30 (approx. 2 classes/month)";
+        public static readonly string confirmation2 = "Confirmation 2 (GRADE 10): Wednesday nights 6:30-8:30 (approx. 2 classes/month)";
 
         public static readonly string reledemailaddress = "religioused@saint-malachy.org";
         public static readonly string officeemailaddress = "office@saint-malachy.org";
         public static readonly string bulletinemailaddress = "bulletin@saint-malachy.org";
+        public static readonly string webmasteremailaddress = "webmaster@saint-malachy.org";
+        public static readonly string[] funeralemailaddress = { "office@saint-malachy.org", "ps.garydew@yahoo.com", "wwjcathy@gmail.com", "marynolan5@aol.com"};
+
     }
 }

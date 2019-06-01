@@ -1,6 +1,6 @@
 ///<reference path="../Global/GlobalConstants.ts" />
 ///<reference path="../Global/EmailHelper.ts" />
-var ReligiousEdForm = (function () {
+var ReligiousEdForm = /** @class */ (function () {
     function ReligiousEdForm() {
         this.religiousEdSendEmailUrl = "/ReligiousEd/SendEmail";
     }
@@ -119,7 +119,7 @@ var ReligiousEdForm = (function () {
     };
     return ReligiousEdForm;
 }());
-var ReligiousFormFields = (function () {
+var ReligiousFormFields = /** @class */ (function () {
     function ReligiousFormFields() {
     }
     return ReligiousFormFields;

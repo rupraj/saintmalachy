@@ -1,4 +1,6 @@
 ﻿$(document).ready(function () {
+    var test = $(".freebirdFormviewerViewFormContentWrapper");
+
     $("#familyNext").on("click",function (e) {
         $("#ChildInfoContainer").toggle();
         $("#familyInfoContainer").toggle();

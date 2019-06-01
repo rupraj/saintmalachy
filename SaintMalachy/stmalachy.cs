@@ -17,6 +17,7 @@ namespace SaintMalachy
         public stmalachy()
             : base("name=stmalachy")
         {
+            
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 

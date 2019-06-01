@@ -15,58 +15,78 @@ namespace SaintMalachy.Helpers
         public static string SendEmail(T data)
         {
             stmalachy malachyContext = new stmalachy();
-            string emailType = data.GetType().Name;
-            switch (emailType)
-            {
-                case "RaceForGrace":
-                    try {
-                        malachyContext.RaceForGrace.Add(data as RaceForGrace);
-                        malachyContext.SaveChanges();
-                        GoogleSpreadSheetHelper.InsertSpreadSheet<RaceForGrace>(data as RaceForGrace);
-                        return GlobalConstants.registSuccess;
-                    }
-                    catch (Exception ex)
-                    {
-                        return GlobalConstants.registFailure;
-                    }
-                    
+            try {
+                if (malachyContext.Database.Connection.State == System.Data.ConnectionState.Closed)
+                {
+                    malachyContext.Database.Connection.Open();
+                }
+                string emailType = data.GetType().Name;
+                switch (emailType)
+                {
+                    case "RaceForGrace":
+                        try
+                        {
+                            malachyContext.RaceForGrace.Add(data as RaceForGrace);
+                            malachyContext.SaveChanges();
+                            GoogleSpreadSheetHelper.InsertSpreadSheet<RaceForGrace>(data as RaceForGrace);
+                            return GlobalConstants.registSuccess;
+                        }
+                        catch (Exception ex)
+                        {
+                            return GlobalConstants.registFailure;
+                        }
 
-                    break;
-                case "BaptismRequestModel":
-                    malachyContext.BaptismRequest.Add(data as BaptismRequestModel);
-                    malachyContext.SaveChanges();
-                    GoogleSpreadSheetHelper.InsertSpreadSheet<BaptismRequestModel>(data as BaptismRequestModel);
-                    return SendEmail(ProcessBaptismEmailBody(data as BaptismRequestModel),GlobalConstants.baptismEmailSubject,GlobalConstants.reledemailaddress);
-                case "FuneralRequestModel":
-                    malachyContext.FuneralRequest.Add(data as FuneralRequestModel);
-                    malachyContext.SaveChanges();
-                    return SendEmail(ProcessFuneralRequestEmailBody(data as FuneralRequestModel), GlobalConstants.funeralEmailSubject,GlobalConstants.bulletinemailaddress);
-                case "FuneralHomeInfoModel":
-                    malachyContext.FuneralHomeInfo.Add(data as FuneralHomeInfoModel);
-                    malachyContext.SaveChanges();
-                    return SendEmail(ProcessFuneralHomeInfoEmailBody(data as FuneralHomeInfoModel), GlobalConstants.funeralHomeInfoSubject,GlobalConstants.bulletinemailaddress);
-                case "ReligiousEdModel":
-                    ReligiousEdModel model = data as ReligiousEdModel;
-                    model.sacrecords1 = GetSacramentRecords(model.sacrecords1);
-                    model.reledchoice1 = GetRelEdChoice(model.reledchoice1);
-                    model.sacrecords2 = GetSacramentRecords(model.sacrecords2);
-                    model.reledchoice2 = GetRelEdChoice(model.reledchoice2);
-                    model.sacrecords3 = GetSacramentRecords(model.sacrecords3);
-                    model.reledchoice3 = GetRelEdChoice(model.reledchoice3);
-                    model.sacrecords4 = GetSacramentRecords(model.sacrecords4);
-                    model.reledchoice4 = GetRelEdChoice(model.reledchoice4);
-                    model.sacrecords5 = GetSacramentRecords(model.sacrecords5);
-                    model.reledchoice5 = GetRelEdChoice(model.reledchoice5);
-                    model.sacrecords6 = GetSacramentRecords(model.sacrecords6);
-                    model.reledchoice6 = GetRelEdChoice(model.reledchoice6);
-                    malachyContext.ReligiousEd.Add(data as ReligiousEdModel);
-                    malachyContext.SaveChanges();
-                    GoogleSpreadSheetHelper.InsertSpreadSheet<ReligiousEdModel>(model);
-                    return SendEmail(ProcessReligiousEdEmailBody(model), GlobalConstants.religiousEdSubject,GlobalConstants.reledemailaddress);
-                default:
-                    return string.Empty;
-                    
+
+                        break;
+                    case "BaptismRequestModel":
+                        malachyContext.BaptismRequest.Add(data as BaptismRequestModel);
+                        malachyContext.SaveChanges();
+                        GoogleSpreadSheetHelper.InsertSpreadSheet<BaptismRequestModel>(data as BaptismRequestModel);
+                        return SendEmail(ProcessBaptismEmailBody(data as BaptismRequestModel), GlobalConstants.baptismEmailSubject, GlobalConstants.reledemailaddress);
+                    case "FuneralRequestModel":
+                        malachyContext.FuneralRequest.Add(data as FuneralRequestModel);
+                        malachyContext.SaveChanges();
+                        return SendEmail(ProcessFuneralRequestEmailBody(data as FuneralRequestModel), GlobalConstants.funeralEmailSubject, GlobalConstants.funeralemailaddress);
+                    case "FuneralHomeInfoModel":
+                        malachyContext.FuneralHomeInfo.Add(data as FuneralHomeInfoModel);
+                        malachyContext.SaveChanges();
+                        return SendEmail(ProcessFuneralHomeInfoEmailBody(data as FuneralHomeInfoModel), GlobalConstants.funeralHomeInfoSubject, GlobalConstants.funeralemailaddress);
+                    case "ReligiousEdModel":
+                        ReligiousEdModel model = data as ReligiousEdModel;
+                        model.sacrecords1 = GetSacramentRecords(model.sacrecords1);
+                        model.reledchoice1 = GetRelEdChoice(model.reledchoice1);
+                        model.sacrecords2 = GetSacramentRecords(model.sacrecords2);
+                        model.reledchoice2 = GetRelEdChoice(model.reledchoice2);
+                        model.sacrecords3 = GetSacramentRecords(model.sacrecords3);
+                        model.reledchoice3 = GetRelEdChoice(model.reledchoice3);
+                        model.sacrecords4 = GetSacramentRecords(model.sacrecords4);
+                        model.reledchoice4 = GetRelEdChoice(model.reledchoice4);
+                        model.sacrecords5 = GetSacramentRecords(model.sacrecords5);
+                        model.reledchoice5 = GetRelEdChoice(model.reledchoice5);
+                        model.sacrecords6 = GetSacramentRecords(model.sacrecords6);
+                        model.reledchoice6 = GetRelEdChoice(model.reledchoice6);
+                        malachyContext.ReligiousEd.Add(model);
+                        malachyContext.SaveChanges();
+                        GoogleSpreadSheetHelper.InsertSpreadSheet<ReligiousEdModel>(model);
+                        return SendEmail(ProcessReligiousEdEmailBody(model), GlobalConstants.religiousEdSubject, GlobalConstants.reledemailaddress);
+                    default:
+                        return string.Empty;
+
+                }
             }
+            catch(Exception ex)
+            {
+                var test = ex;
+                return string.Empty;
+            }
+            finally
+            {
+                if (malachyContext.Database.Connection.State == System.Data.ConnectionState.Open)
+                {
+                    malachyContext.Database.Connection.Close();
+                }
+            }
+            
         }
 
         private static string SendEmail(string data,string subject, string toaddress)
@@ -98,6 +118,45 @@ namespace SaintMalachy.Helpers
             
             
         }
+
+        private static string SendEmail(string data, string subject, string[] toaddress)
+        {
+
+            try
+            {
+                //MailMessage mm = new MailMessage("webmaster@saint-malachy.org", toaddress, subject, data);
+                MailMessage mm = new MailMessage();
+                mm.From = new MailAddress(GlobalConstants.webmasteremailaddress);
+                foreach(string addr in toaddress)
+                {
+                    mm.To.Add(addr);
+                }
+                mm.Subject = subject;
+                mm.Body = data;
+                SmtpClient client = new SmtpClient();
+                client.Port = Convert.ToInt32(ConfigurationManager.AppSettings.Get("EmailPort"));
+                client.Host = ConfigurationManager.AppSettings.Get("EmailHost");
+                client.EnableSsl = false;
+                client.Timeout = 10000;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new System.Net.NetworkCredential(ConfigurationManager.AppSettings.Get("EmailUsername"), ConfigurationManager.AppSettings.Get("EmailPassword"));
+                mm.IsBodyHtml = true;
+                mm.BodyEncoding = UTF8Encoding.UTF8;
+                mm.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+
+                client.Send(mm);
+                return GlobalConstants.emailSuccess;
+            }
+            catch (Exception ex)
+            {
+                var test = ex;
+                return GlobalConstants.emailFailure;
+            }
+
+
+        }
+
         private static string ProcessBaptismEmailBody(BaptismRequestModel data)
         {
             string htmlBody = EmailResources.BaptismOnlineForm;
@@ -301,8 +360,7 @@ namespace SaintMalachy.Helpers
             {
                 case "SummerSession1":
                     return GlobalConstants.summerSession1;
-                case "SummerSession2":
-                    return GlobalConstants.summerSession2;
+                
                 case "SundayProgram":
                     return GlobalConstants.sundayProgram;
                 case "MondayNight":

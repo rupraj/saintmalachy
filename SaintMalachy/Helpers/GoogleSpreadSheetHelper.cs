@@ -61,32 +61,29 @@ namespace SaintMalachy.Helpers
                             ApplicationName = ApplicationName,
                         });
 
-                        //// Define request parameters.
-                        String spreadsheetId = "1jziYTFiuQjM_5XqvaxdIyoB06A-e76Au8phFxm-uYYs";
-                        String range = "Form Responses 1!A1:CQ";
+                    //// Define request parameters.
+                    String spreadsheetId = "1JDCPdz_hOoTgUbo3h5j8-t3KlAVaUyjLPE0oyimpdtM"; //"1pEpSIcXNUPfA2Az3fD0F0Epi8MgCCNvK2JD9-MtvSi4";
+                        String range = "Form Responses 1!A1:CJ";
                         ValueRange valrange = new ValueRange();
                         valrange.Range = range;
                         valrange.MajorDimension = "ROWS";
 
                         List<object> datalist = new List<object>();
-                    var mylist = new List<object>() { model.CreatedOn, string.Empty, string.Empty, string.Empty, string.Empty, model.TodayDate,
+                    var mylist = new List<object>() { model.CreatedOn, string.Empty, string.Empty, string.Empty, model.TodayDate,
                             model.FamilyName, model.Address, model.City, model.State, model.ZipCode, model.Phone, model.FamilyEmail, model.FatherFirstName, model.FatherLastName, model.FatherEmail,
-                            model.MotherFirstName, model.MotherLastName, model.MotherMaiden, model.MotherEmail, model.WantToHelp,model.HelpInterest,model.Child1FirstName,model.Child1MiddleInitial,
+                            model.MotherFirstName, model.MotherLastName, model.MotherMaiden, model.MotherEmail, model.WantToHelp,model.HelpInterest,model.Child1FirstName,
                         model.Child1LastName,model.Child1Grade,model.Child1DOB,model.Child1Email,model.Child1BaptismPlace,model.Child1BaptismDate,model.Child1EucharistPlace,model.Child1EucharistDate,
-                        model.sacrecords1,model.reledchoice1,
-                        model.Child2FirstName,model.Child2MiddleInitial,
-                        model.Child2LastName,model.Child2Grade,model.Child2DOB,model.Child2Email,model.Child2BaptismPlace,model.Child2BaptismDate,model.Child2EucharistPlace,model.Child2EucharistDate,
+                        model.sacrecords1,model.reledchoice1, model.Child2FirstName, model.Child2LastName,model.Child2Grade,model.Child2DOB,model.Child2Email,model.Child2BaptismPlace,model.Child2BaptismDate,model.Child2EucharistPlace,model.Child2EucharistDate,
                         model.sacrecords2,model.reledchoice2,
-                        model.Child3FirstName,model.Child3MiddleInitial,
-                        model.Child3LastName,model.Child3Grade,model.Child3DOB,model.Child3Email,model.Child3BaptismPlace,model.Child3BaptismDate,model.Child3EucharistPlace,model.Child3EucharistDate,
+                        model.Child3FirstName, model.Child3LastName,model.Child3Grade,model.Child3DOB,model.Child3Email,model.Child3BaptismPlace,model.Child3BaptismDate,model.Child3EucharistPlace,model.Child3EucharistDate,
                         model.sacrecords3,model.reledchoice3,
-                        model.Child4FirstName,model.Child4MiddleInitial,
+                        model.Child4FirstName,
                         model.Child4LastName,model.Child4Grade,model.Child4DOB,model.Child4Email,model.Child4BaptismPlace,model.Child4BaptismDate,model.Child4EucharistPlace,model.Child4EucharistDate,
                         model.sacrecords4,model.reledchoice4,
-                        model.Child5FirstName,model.Child5MiddleInitial,
+                        model.Child5FirstName,
                         model.Child5LastName,model.Child5Grade,model.Child5DOB,model.Child5Email,model.Child5BaptismPlace,model.Child5BaptismDate,model.Child5EucharistPlace,model.Child5EucharistDate,
                         model.sacrecords5,model.reledchoice5,
-                        model.Child6FirstName,model.Child6MiddleInitial,
+                        model.Child6FirstName,
                         model.Child6LastName,model.Child6Grade,model.Child6DOB,model.Child6Email,model.Child6BaptismPlace,model.Child6BaptismDate,model.Child6EucharistPlace,model.Child6EucharistDate,
                         model.sacrecords6,model.reledchoice6,model.amtdue };
                     valrange.Values = new List<IList<object>> { mylist };

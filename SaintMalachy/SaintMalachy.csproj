@@ -18,7 +18,7 @@
     <AssemblyName>SaintMalachy</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -27,7 +27,8 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
-    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -215,11 +216,15 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BaptismController.cs" />
+    <Compile Include="Controllers\CatholicAppealController.cs" />
+    <Compile Include="Controllers\EmailTestController.cs" />
     <Compile Include="Controllers\FuneralController.cs" />
     <Compile Include="Controllers\GoogleApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MiscController.cs" />
+    <Compile Include="Controllers\MusicMinistryController.cs" />
+    <Compile Include="Controllers\OnlineGivingController.cs" />
     <Compile Include="Controllers\PdfController.cs" />
     <Compile Include="Controllers\ReligiousEdController.cs" />
     <Compile Include="Controllers\TopHeaderController.cs" />
@@ -325,14 +330,21 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Images\148849523.jpg" />
+    <Content Include="Content\Images\24hrs.jpg" />
     <Content Include="Content\Images\arrow-down.png" />
     <Content Include="Content\Images\arrow-right.png" />
+    <Content Include="Content\Images\BaptismAtMalachy.jpg" />
+    <Content Include="Content\Images\BaptismImage.jpg" />
+    <Content Include="Content\Images\CA2017.jpg" />
     <Content Include="Content\Images\capucibaptism.jpg" />
+    <Content Include="Content\Images\CatholicAppeal.jpg" />
+    <Content Include="Content\Images\Christmas2019.jpg" />
     <Content Include="Content\Images\ChristmasBanner.jpg" />
     <Content Include="Content\Images\Church-Front.jpg" />
     <Content Include="Content\Images\Church-FrontBoard.jpg" />
     <Content Include="Content\Images\Church-LeftSide.jpg" />
     <Content Include="Content\Images\Church-LeftSideModified.jpg" />
+    <Content Include="Content\Images\Easter2018.jpg" />
     <Content Include="Content\Images\History\1stpr.jpg" />
     <Content Include="Content\Images\History\barn.jpg" />
     <Content Include="Content\Images\History\chapel.jpg" />
@@ -348,16 +360,25 @@
     <Content Include="Content\Images\IndexButtons\Funeral.jpg" />
     <Content Include="Content\Images\IndexButtons\MassTime.jpg" />
     <Content Include="Content\Images\JubileeYearofMercy.jpg" />
+    <Content Include="Content\Images\LentenFire.jpg" />
+    <Content Include="Content\Images\MassTimesForTravel.jpg" />
+    <Content Include="Content\Images\Obligation.jpg" />
+    <Content Include="Content\Images\OnlineGiving.jpg" />
     <Content Include="Content\Images\RaceForGrace.jpg" />
+    <Content Include="Content\Images\RelEducation.jpg" />
+    <Content Include="Content\Images\RelEducation2019.jpg" />
+    <Content Include="Content\Images\RelEducation2020.jpg" />
     <Content Include="Content\Images\saintmalachy.jpg" />
     <Content Include="Content\Images\Staff\CamilleMainardi.jpg" />
     <Content Include="Content\Images\Staff\church1.jpg" />
+    <Content Include="Content\Images\Staff\FJS.JPG" />
     <Content Include="Content\Images\Staff\FRAugustineTufail.jpg" />
     <Content Include="Content\Images\Staff\FrJohnCapuci.jpg" />
     <Content Include="Content\Images\Staff\FrJosephKeville.jpg" />
     <Content Include="Content\Images\Staff\FrThomasKane.jpg" />
     <Content Include="Content\Images\Staff\GaryDew.jpg" />
     <Content Include="Content\Images\Staff\KathleenKeady.jpg" />
+    <Content Include="Content\Images\Staff\NoImage.jpg" />
     <Content Include="Content\Images\Staff\RuthYanetti.jpg" />
     <Content Include="Content\Images\StMalachy.jpg" />
     <Content Include="Content\Images\StMalachyFront.jpg" />
@@ -385,6 +406,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\pdf\Race for Grace Flyer.pdf" />
+    <Content Include="Content\pdf\24_Burlington_SM.pdf" />
+    <Content Include="Content\pdf\OnlineGiving.PDF" />
+    <Content Include="Content\pdf\Parish_Mission.pdf" />
+    <Content Include="Content\pdf\2018-2019_RE_Schedule_1-6.pdf" />
+    <Content Include="Content\pdf\2018-2019_RE_Schedule_7-8.pdf" />
     <None Include="Properties\PublishProfiles\SaintMalachy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Bulletin.js" />
@@ -453,7 +479,7 @@
     <Content Include="Views\TopHeader\Contact.cshtml" />
     <Content Include="Views\Shared\Baptism_Layout.cshtml" />
     <Content Include="Views\Baptism\Index.cshtml" />
-    <Content Include="Views\Baptism\OnlineForm.cshtml" />
+    <Content Include="Views\Baptism\BaptismAtMalachy.cshtml" />
     <Content Include="Views\Shared\_BaptismLeftMenu.cshtml" />
     <Content Include="Views\Funeral\FuneralRequestForm.cshtml" />
     <Content Include="Views\Shared\_FuneralLeftMenu.cshtml" />
@@ -483,6 +509,12 @@
     <Content Include="SpreadSheet\.credentials\sheets.googleapis.com-dotnet-quickstart.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" />
     <Content Include="SpreadSheet\.credentials\stmalachyspreadsheet.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" />
     <Content Include="Views\Misc\RaceForGrace.cshtml" />
+    <Content Include="Views\CatholicAppeal\Index.cshtml" />
+    <Content Include="Views\ReligiousEd\SummerProg.cshtml" />
+    <Content Include="Views\OnlineGiving\Index.cshtml" />
+    <Content Include="Views\EmailTest\Index.cshtml" />
+    <Content Include="Views\MusicMinistry\Index.cshtml" />
+    <Content Include="Views\ReligiousEd\Confirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -587,7 +619,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>60445</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/SaintMalachy</IISUrl>
+          <IISUrl>http://localhost:60445/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -1,4 +1,4 @@
-var EmailHelper = (function () {
+var EmailHelper = /** @class */ (function () {
     function EmailHelper() {
     }
     EmailHelper.SendEmail = function (uri, data, formtype) {

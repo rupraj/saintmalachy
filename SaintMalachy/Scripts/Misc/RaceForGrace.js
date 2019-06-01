@@ -1,6 +1,6 @@
 ///<reference path="../Global/GlobalConstants.ts" />
 ///<reference path="../Global/EmailHelper.ts" />
-var RaceForGraceForm = (function () {
+var RaceForGraceForm = /** @class */ (function () {
     function RaceForGraceForm() {
         this.raceforgraceSendEmailUrl = "/Misc/SendRaceForGraceEmail";
     }
@@ -28,7 +28,7 @@ var RaceForGraceForm = (function () {
     };
     return RaceForGraceForm;
 }());
-var RaceForGraceFields = (function () {
+var RaceForGraceFields = /** @class */ (function () {
     function RaceForGraceFields() {
     }
     return RaceForGraceFields;

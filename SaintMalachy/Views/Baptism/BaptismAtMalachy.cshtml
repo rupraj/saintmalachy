@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Baptism at St. Malachy Parish";
+}
+<div class="container row">
+    <div class="col-md-9 paddingleftremove ">
+        <h2>Baptism at St. Malachy Parish</h2>
+        <hr />
+        <p>
+            Baptisms are celebrated on the fourth Sunday of each month at St. Malachy Parish. Prior to having a child baptized, parents are expected to participate in an instruction session on the Sacrament of Baptism.
+        </p>
+        <p>
+            To make arrangements for your child’s baptism, please call Camille Mainardi at the Parish Office 781-272-5111, ext. 18
+        </p>
+        <img src="~/Content/Images/BaptismAtMalachy.jpg" />
+    </div>
+    <div class="col-md-3">
+        @{Html.RenderPartial("_BaptismLeftMenu"); }
+    </div>
+</div>
+@Scripts.Render("~/bundles/baptism")
+
+
+
+
