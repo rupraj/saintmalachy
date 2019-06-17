@@ -100,8 +100,8 @@
 .carouselcontainer {
     /*background-color:#efefef;*/
     position: relative;
-    float: left;
-    width: 105%;
+    float: right;
+    padding-right:50% !important;
     margin-top: 5px;
     border-radius: 2px;
 }

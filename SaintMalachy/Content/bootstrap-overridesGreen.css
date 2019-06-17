@@ -170,10 +170,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .carouselcontainer {
-    /*background-color:#efefef;*/
+    /*background-color:#efefef;
     position: relative;
-    float: left;
-    width: 105%;
+    float: right;
+    padding-right:50%; */
+    text-align: -webkit-center;
     margin-top: 5px;
     border-radius: 2px;
 }
@@ -181,7 +182,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .carousel {
     /*background-color:#efefef;*/
     position: relative;
-    float: left;
+    /*float: left;*/
     border-radius: 2px;
 }
 

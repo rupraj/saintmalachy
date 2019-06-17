@@ -348,6 +348,7 @@
     <Content Include="Content\Images\History\1stpr.jpg" />
     <Content Include="Content\Images\History\barn.jpg" />
     <Content Include="Content\Images\History\chapel.jpg" />
+    <Content Include="Content\Images\History\FJS.JPG" />
     <Content Include="Content\Images\History\Fr Ed Flaherty final.jpg" />
     <Content Include="Content\Images\History\Fr James Rafferty Final.jpg" />
     <Content Include="Content\Images\History\Fr Joe Reilly final.jpg" />
@@ -375,6 +376,8 @@
     <Content Include="Content\Images\Staff\FRAugustineTufail.jpg" />
     <Content Include="Content\Images\Staff\FrJohnCapuci.jpg" />
     <Content Include="Content\Images\Staff\FrJosephKeville.jpg" />
+    <Content Include="Content\Images\Staff\FrMahoney.jpg" />
+    <Content Include="Content\Images\Staff\FrOlejnik.jpg" />
     <Content Include="Content\Images\Staff\FrThomasKane.jpg" />
     <Content Include="Content\Images\Staff\GaryDew.jpg" />
     <Content Include="Content\Images\Staff\KathleenKeady.jpg" />

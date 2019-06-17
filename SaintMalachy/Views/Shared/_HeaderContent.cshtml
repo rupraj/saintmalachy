@@ -1,4 +1,14 @@
-﻿<div class="row">
+﻿<div id="TopHeaderLinks" class="pull-right">
+    <ol class="breadcrumb">
+        <li class="customfontfamily">@Html.ActionLink("Mass Times", "MassTimes", "TopHeader")</li>
+        <li class="customfontfamily">@Html.ActionLink("Bulletin", "Bulletin", "TopHeader")</li>
+        <li class="customfontfamily">@Html.ActionLink("Directions", "Direction", "TopHeader")</li>
+        <li class="customfontfamily">@Html.ActionLink("Contact Us", "Contact", "TopHeader")</li>
+        <li class="customfontfamily"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=dz4veicab&p=oi&m=1101932461859&sit=mz68qk6cb&f=39e83804-ed17-469f-8597-5141a2f0b9fc" target="_blank">Subscribe</a></li>
+    </ol>
+    <div class="headerlink pull-right"></div>
+</div>
+<div class="row col-xs-12">
     <a href="/new">
         <div class="col-md-4">
             <div class="h2">
@@ -11,16 +21,7 @@
             </div>
         </div>
     </a>
-    <div id="TopHeaderLinks" class="col-md-8 text-right">
-        <ol class="breadcrumb">
-            <li class="customfontfamily">@Html.ActionLink("Mass Times", "MassTimes","TopHeader")</li>
-            <li class="customfontfamily">@Html.ActionLink("Bulletin", "Bulletin", "TopHeader")</li>
-            <li class="customfontfamily">@Html.ActionLink("Directions", "Direction", "TopHeader")</li>
-            <li class="customfontfamily">@Html.ActionLink("Contact Us", "Contact", "TopHeader")</li>
-            <li class="customfontfamily"><a href="https://visitor.r20.constantcontact.com/d.jsp?llr=dz4veicab&p=oi&m=1101932461859&sit=mz68qk6cb&f=39e83804-ed17-469f-8597-5141a2f0b9fc" target="_blank">Subscribe</a></li>
-        </ol>
-        <div class="headerlink pull-right"></div>
-    </div>
+
 </div>
 <div class="row">
     @{ Html.RenderPartial("_NavBar");}
