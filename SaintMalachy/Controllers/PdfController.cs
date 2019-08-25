@@ -75,5 +75,10 @@ namespace SaintMalachy.Controllers
             //Response.OutputStream.Write()
             Response.Flush();
         }
+
+        public FileResult RelEdFlyer()
+        {
+            return File(Server.MapPath("~/Content/pdf/Fall_Activities_Flyer_2019-2020.pdf"), "application/pdf");
+        }
     }
 }
