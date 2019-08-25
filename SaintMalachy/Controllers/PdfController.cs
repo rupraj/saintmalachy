@@ -34,7 +34,7 @@ namespace SaintMalachy.Controllers
 
         public void RelEdOneToSix()
         {
-            string filePath = Server.MapPath("~/Content/pdf/2018-2019_RE_Schedule_1-6.pdf");
+            string filePath = Server.MapPath("~/Content/pdf/2019-2020_RE_Schedule_1-6.pdf");
             Response.Clear();
             Response.ContentType = "application/pdf";
             Response.AppendHeader("Content-disposition", "attachment; filename=ReligiousEd-Schedule-Grade-1-6.pdf"); // open in a new window
@@ -45,7 +45,7 @@ namespace SaintMalachy.Controllers
 
         public void RelEdSevenToEight()
         {
-            string filePath = Server.MapPath("~/Content/pdf/2018-2019_RE_Schedule_7-8.pdf");
+            string filePath = Server.MapPath("~/Content/pdf/2019-2020_RE_Schedule_7-8.pdf");
             Response.Clear();
             Response.ContentType = "application/pdf";
             Response.AppendHeader("Content-disposition", "attachment; filename=ReligiousEd-Schedule-Grade-7-8.pdf"); // open in a new window

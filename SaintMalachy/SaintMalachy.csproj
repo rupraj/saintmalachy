@@ -413,8 +413,8 @@
     <Content Include="Content\pdf\24_Burlington_SM.pdf" />
     <Content Include="Content\pdf\OnlineGiving.PDF" />
     <Content Include="Content\pdf\Parish_Mission.pdf" />
-    <Content Include="Content\pdf\2018-2019_RE_Schedule_1-6.pdf" />
-    <Content Include="Content\pdf\2018-2019_RE_Schedule_7-8.pdf" />
+    <Content Include="Content\pdf\2019-2020_RE_Schedule_7-8.pdf" />
+    <Content Include="Content\pdf\2019-2020_RE_Schedule_1-6.pdf" />
     <None Include="Properties\PublishProfiles\SaintMalachy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Bulletin.js" />
